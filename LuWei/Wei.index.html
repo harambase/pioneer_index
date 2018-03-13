@@ -2,14 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcom Wei</title>
+    <title>Wellcom Wei</title>
 </head>
 <body>
 <div class="left";weith="30%">
 <input type="datetime-local">
-    <p><strong>welcom</strong></p>
-    <input type="radio">
+    <p><strong>Welcom</strong></p>
+    用户名<input type="text"id="username"value="" palceholder="请输入用户名"><br>
+    密码<input type="text"id="password"value="" palceholder="请输入密码"><br>
+    <button onclick="sumit()">登录</button>
 </div>
+<script>
+ function sumit(){
+     var username=document.getElementById("username").value;
+     var password=document.getElementById("password").value
+     console.log(document.getElementById("username"));+
+     console.log(document.getElementById("password")+"以上，完毕。");
+     alert(username+password)
 
-</body>
+
+
+
+ }
+
+
+</script>
+ </body>
 </html>
