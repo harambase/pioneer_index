@@ -18,18 +18,39 @@
 <body>
 
 <div class="left">
-    <input type="text">
-    <input type="password">
-    <input type="radio">
-    <input type="checkbox">
-    <input type="email">
-    <input type="file">
+    1<input type="text" id="username" value="">
+    2<input type="password" id="password">
+    3<input type="radio" id="gender" value="undefined">
+    4<input type="checkbox">
+    5<input type="email">
+    6<input type="file">
 </div>
 
 <div id="right">
     <p><strong>Hello World!</strong> <br>
         dahdsfkjlashdfla</p>  <hr/>
+    <button onclick="popup()">点我</button>
+    <button onclick="submit()">提交</button>
 </div>
 
+
 </body>
+
+<script>
+
+    function popup(){
+        console.log("I'm here from console.log");
+        callme(123);
+    }
+    function callme(value){
+        alert(value)
+    }
+
+    function submit(){
+        var username = document.getElementById("username").value;
+        alert(username)
+
+    }
+
+</script>
 </html>
