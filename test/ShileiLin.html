@@ -18,8 +18,8 @@
 <body>
 
 <div class="left">
-    1<input type="text" id="username" value="">
-    2<input type="password" id="password">
+    1<input type="text" id="username" value="" placeholder="请输入用户名">
+    2<input type="password" id="password" value="" placeholder="请输入密码">
     3<input type="radio" id="gender" value="undefined">
     4<input type="checkbox">
     5<input type="email">
@@ -48,6 +48,7 @@
 
     function submit(){
         var username = document.getElementById("username").value;
+        console.log(document.getElementById("username"));
         alert(username)
 
     }
