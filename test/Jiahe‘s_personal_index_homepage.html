@@ -17,8 +17,21 @@
 </head>
 
 <body>
+
 <p>What's our next step</p>
-<input type="text">
+
+<input type="text" id="mail" value="">+
 <input type="email">
+
+<button onclick="js1()">提交</button>
 </body>
+<script>
+    function js1() {
+        var mail=document.getElementById ("mail").value
+        console.log(document.getElementById ("mail"))
+        alert(mail)
+    }
+
+
+</script>
 </html>
