@@ -14,6 +14,7 @@
             float:right
         }
     </style>
+    <script src="../jquery-1.12.3.min.js"></script>
 </head>
 <body>
 
@@ -31,6 +32,9 @@
         dahdsfkjlashdfla</p>  <hr/>
     <button onclick="popup()">点我</button>
     <button onclick="submit()">提交</button>
+
+    <input type="text" id="binary" placeholder="请输入">
+    <button id="transform">转成2进制</button>
 </div>
 
 
@@ -50,8 +54,19 @@
         var username = document.getElementById("username").value;
         console.log(document.getElementById("username"));
         alert(username)
-
     }
+    //document.getElementById("transform")
+    //不推荐
+    $("#transform").click(function(){
+        //取值
+       var inputValue = $("#binary").val();
+       //赋值
+        $("#username").val("199999");
+        //清空
+        $("#binary").val('');
+       alert(inputValue)
+    })
 
 </script>
+
 </html>
