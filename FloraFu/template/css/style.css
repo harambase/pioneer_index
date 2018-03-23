@@ -19,7 +19,7 @@ body a{
 	text-align:center;
 }
 .banner-info1{
-	background: url(../images/banner.jpg) no-repeat center fixed;
+	background: url(../../../template/images/banner.jpg) no-repeat center fixed;
 	background-size:cover;
 	-webkit-background-size:cover; 
 	-moz-background-size:cover;
@@ -29,7 +29,7 @@ body a{
 	text-align:center;
 }
 .banner-slider{
-	background: url(../images/banner.jpg) no-repeat center fixed;
+	background: url(../../../template/images/banner.jpg) no-repeat center fixed;
 	background-size:cover;
 	-webkit-background-size:cover; 
 	-moz-background-size:cover;
@@ -987,6 +987,12 @@ ul.about_right li.test_desc p{
 	color:#fff;
 	text-decoration:underline;
 	background:#32BCAD;
+}
+.pic{
+	padding: 5px;
+
+	border:5px;
+	border:dotted;
 }
 /*--blog--*/
 .blog{
