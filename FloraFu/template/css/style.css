@@ -988,12 +988,20 @@ ul.about_right li.test_desc p{
 	text-decoration:underline;
 	background:#32BCAD;
 }
-.pic{
-	padding: 3px;
-    margin: 15px;
-	border:5px;
-	border:dotted;
+.pic-2{
+	posision:absolute;
+	z-index: 999;
 }
+.pic-1{
+	position:absolute;
+	z-index:99;
+}
+.pic{
+	margin:10px;
+	border:dotted;
+	padding:3px;
+}
+
 /*--blog--*/
 .blog{
 	padding:5em 0 10em;
