@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <title>Title</title>
 
-    <style>
-        .left{
-            width: 50%;
-            float:left
-        }
-        #right{
-            width: 50%;
-            float:right
-        }
-    </style>
+
 </head>
 
 <body>
 
-<p>What's our next step</p>
+<input type="text" id="mail" value="请输入一个十进制的数字">
 
-<input type="text" id="mail" value="">+
-<input type="email">
+<button onclick="d2b()">提交</button>
 
-<button onclick="js1()">提交</button>
 </body>
+
 <script>
-    function js1() {
-        var mail=document.getElementById ("mail").value
-        console.log(document.getElementById ("mail"))
-        alert(mail)
+    function d2b()
+
+    {
+        var s=[]
+        var x = document.getElementById("mail").value
+        while(x!==0)
+        {
+            var y =x%2
+            s.push(y)
+            x=Math.floor(x/2)
+        }
+        var length=s.length
+        for(var i=length-1;i>=0;i--)
+            alert(s)
     }
 
 
 </script>
+
 </html>
+
+
+
+
+
+
+
+
+
