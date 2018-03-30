@@ -7,34 +7,29 @@
 <body>
 <div class="left" weith="50%">
     <div class="left col-md-6">
-        <img src="/LuWei/123/images/111.gif">
+        <img src="/pioneer_index/LuWei/123/images/111.gif">
         <div class="row col-md-6">
-            计算<input type="text" class="text" id="binary" value="" placeholder="二进制转换">
-            <button onclick="sumit()"><br>
-                <b>计算</b></button>
+            计算<input type="text"  id="binary" value="" placeholder="二进制转换">
+            <button onclick="d2B()"><b>计算</b></button>
         </div>
     </div>
-<input type="datetime-local">
-    <p><strong>Welcom</strong></p>
-    用户名<input type="text"id="username"value="" placeholder="请输入用户名"><br>
-    密码<input type="text"id="password"value="" placeholder="请输入密码"><br>
-    <button onclick="sumit()">登录</button>
 </div>
 <script>
- function sumit(){
-     var username=document.getElementById("username").value;
-     var password=document.getElementById("password").value
-     console.log(document.getElementById("username"));+
-     console.log(document.getElementById("password")+"以上，完毕。");
-     alert(username+password)
-     
-
-
-
-
+ function d2B(){
+     var x=document.getElementById("binary").value
+     var output=[]
+     while(x!==0)
+     {
+         var y=x%2
+         output.push(y)
+         x=Math.floor(x/2)
+     }
+     var outputlength=output.length
+     for(var i=outputlength-1;i>=0;i--)
+         console.log(output)
  }
 
-
 </script>
+
  </body>
 </html>
