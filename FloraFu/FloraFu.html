@@ -15,7 +15,6 @@
 <script>
     function submit() {
         var num = document.getElementById("number").value;
-        console.log(num % 2);
         alert(num % 2);
         alert(Math.floor(1 / 2))
     }
@@ -23,6 +22,7 @@
     function dToB() {
         var output = [];
         var x = Math.round(document.getElementById("binary").value);
+
         while (Math.floor(x / 2) !== 0 || Math.round(x / 2) === 1) {
             var r = Math.round(x % 2);
             output.push(r);

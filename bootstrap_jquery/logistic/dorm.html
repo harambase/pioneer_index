@@ -518,5 +518,33 @@
 <script src="../static/plugins/jquery/jquery.metisMenu.js"></script>
 <script src="../static/scripts/common/custom-scripts.js"></script>
 <script src="../static/scripts/common/common.js"></script>
+<script>
+    var object = {
+        xiaoming: '10',
+        value: 'length',
+        value2: 'iiiii'
+    };
+
+    var a = [];
+    var s = [];
+
+    $(function(){
+        // 取值 alert("asdfasdf")
+        alert(object.xiaoming)
+        // 赋值
+        console.log(object.value);
+        object.value = "9999";
+        console.log(object.value);
+
+        a.push(object);
+        object = {
+            iii : '10'
+        }
+        a.push(object)
+        console.log(a);
+
+    })
+
+</script>
 
 </html>
