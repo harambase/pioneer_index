@@ -2,9 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>welcome boss</title>
 </head>
 <body>
+<div>
+     <a>姓名:</a>
+     <input type="text" id="1" placeholder="请输入您的姓名"><br>
+     <a>性别：</a>
+     <select id="2">
+     <option>男</option>
+     <option>女</option>
+     <option>保密</option>
+     </select><br>
+     <a>密码：</a>
+     <input type="text" id="3" placeholder="请输入您的密码"><br>
+     <input type="checkbox" id="4">
+     <button onclick="sign_up()">提交</button>
+     <button onclick="qingkong()">清空</button>
+</div>
+<script src="../bootstrap_jquery/static/plugins/jquery/jquery-1.12.3.min.js"></script>
 
+<script>
+
+    var user=
+    {
+        name:"",
+        sex:"",
+        password:"",
+        confirm:""
+    }
+
+    function sign_up()
+    {
+
+        user.name = $ ("#1").val()
+        user.sex = $ ("#2").val()
+        user.password = $ ("#3").val()
+
+        if($("input[type='checkbox']").prop('checked'))
+        {
+            alert("已提交")
+        }
+        else
+        {
+            alert("请确认")
+        }
+
+        console.log(user.name)
+        console.log(user.sex)
+        console.log(user.password)
+
+    }
+
+    function qingkong()
+    {
+        $ ("#1").val("")
+        $ ("#2").val("")
+        $ ("#3").val("")
+    }
+
+
+
+</script>
 </body>
 </html>
