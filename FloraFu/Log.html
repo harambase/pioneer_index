@@ -10,9 +10,10 @@
 <p>性别：<select id="gender">
     <option value = "male">男</option>
     <option value = "female">女</option>
-    <option value = "undefined">默认</option>
+    <option value = "default">默认</option>
 </select>
 <p>密码：<input type="password" id="passcode" value="" placeholder="请输入密码"></p>
+请确认<input type="checkbox">
 <button onclick="submit()">发送</button>
 <button onclick="clear()">Reset</button>
 <button onclick="user2()">User2</button>
@@ -23,6 +24,9 @@
         gender:'',
         passcode:''
     };
+    function check(){
+        document.getElementById("verify").value ="500"
+    }
     var n = $("#name").val();
     var g = $("#gender").val();
     var p = $("#passcode").val();
@@ -44,9 +48,10 @@
         $("#password").val('');
     }
     function user2() {
-        $("#name").val("output[1].n");
-        $("#gender").val("output[1].g");
-        $("#password").val("output[1].p");
+        var i = 1;
+        $("#name").val("output[i].n");
+        $("#gender").val("output[i].g");
+        $("#password").val("output[i].p");
     }
 </script>
 </body>
