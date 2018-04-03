@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log in page</title>
+</head>
+<body>
+<h2>注册用户：</h2>
+<p>姓名：<input type="text" id = "name" value="" placeholder="请输入姓名"></p>
+<p>性别：<select id="gender">
+    <option value = "male">男</option>
+    <option value = "female">女</option>
+    <option value = "undefined">默认</option>
+</select>
+<p>密码：<input type="password" id="passcode" value="" placeholder="请输入密码"></p>
+<button onclick="submit()">发送</button>
+<button onclick="clear()">Reset</button>
+<button onclick="user2()">User2</button>
+
+<script>
+    var output = {
+        name:'',
+        gender:'',
+        passcode:''
+    };
+    var n = $("#name").val();
+    var g = $("#gender").val();
+    var p = $("#passcode").val();
+
+    function submit() {
+        if (document.getElementById("verify").value ==="500") {
+        output.push(n);
+        output.push(g);
+        output.push(p);
+        }
+        else{
+            console.log("请确认");
+            alert("请确认");
+        }
+    }
+    function clear(){
+        $("#name").val('');
+        $("#gender").val('');
+        $("#password").val('');
+    }
+    function user2() {
+        $("#name").val("output[1].n");
+        $("#gender").val("output[1].g");
+        $("#password").val("output[1].p");
+    }
+</script>
+</body>
+</html>
