@@ -18,6 +18,7 @@
 <button onclick="clear()">Reset</button>
 <button onclick="user2()">User2</button>
 
+<script src="../pioneer_index/bootstrap_jquery/static/plugins/jquery/jquery-1.12.3.min.js"></script>
 <script>
     var output = {
         name:'',
@@ -27,28 +28,19 @@
     function check(){
         document.getElementById("verify").value ="500"
     }
-    var n = $("#name").val();
-    var g = $("#gender").val();
-    var p = $("#passcode").val();
 
     function submit() {
-        if (document.getElementById("verify").value ==="500") {
-        output.push(n);
-        output.push(g);
-        output.push(p);
-        }
-        else{
-            console.log("请确认");
-            alert("请确认");
-        }
+        output.name.value=$("#name")
+        outout.gender.value=$("#gender")
+        outout.passcode.value=$("#passcode")
     }
+
     function clear(){
         $("#name").val('');
         $("#gender").val('');
         $("#password").val('');
     }
     function user2() {
-        var i = 1;
         $("#name").val("output[i].n");
         $("#gender").val("output[i].g");
         $("#password").val("output[i].p");
