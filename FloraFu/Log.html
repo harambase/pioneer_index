@@ -13,37 +13,43 @@
     <option value = "default">默认</option>
 </select>
 <p>密码：<input type="password" id="passcode" value="" placeholder="请输入密码"></p>
-请确认<input type="checkbox">
+请确认<input type="checkbox" onclick="check" id="checkbox">
 <button onclick="submit()">发送</button>
 <button onclick="clear()">Reset</button>
 <button onclick="user2()">User2</button>
 
-<script src="../pioneer_index/bootstrap_jquery/static/plugins/jquery/jquery-1.12.3.min.js"></script>
+<script src="../bootstrap_jquery/static/plugins/jquery/jquery-1.12.3.min.js"></script>
 <script>
     var output = {
         name:'',
         gender:'',
         passcode:''
     };
-    function check(){
-        document.getElementById("verify").value ="500"
-    }
-
+    var out=[];
     function submit() {
-        output.name.value=$("#name")
-        outout.gender.value=$("#gender")
-        outout.passcode.value=$("#passcode")
+        output.name=$("#name");
+        output.gender=$("#gender");
+        output.passcode=$("#passcode");
+        out.push(output);
+        console.log(output);
+        console.log(out)
     }
 
     function clear(){
-        $("#name").val('');
-        $("#gender").val('');
-        $("#password").val('');
+        output.name='';
+        output.gender='';
+        output.passcode='';
+        console.log(output)
     }
     function user2() {
-        $("#name").val("output[i].n");
-        $("#gender").val("output[i].g");
-        $("#password").val("output[i].p");
+        output.name= "abo";
+        output.gender="female";
+        output.passcode="1998";
+        out.push(output);
+        console.log(output);
+        $("#name").value=output.name;
+        $("#gender").value=output.gender;
+        $("#passcode").value=output.passcode;
     }
 </script>
 </body>
