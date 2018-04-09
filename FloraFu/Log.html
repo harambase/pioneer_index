@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log in page</title>
+</head>
+<body>
+<h2>注册用户：</h2>
+<p>姓名：<input type="text" id = "name" value="" placeholder="请输入姓名"></p>
+<p>性别：<select id="gender">
+    <option value = "male">男</option>
+    <option value = "female">女</option>
+    <option value = "default">默认</option>
+</select>
+<p>密码：<input type="password" id="passcode" value="" placeholder="请输入密码"></p>
+请确认<input type="checkbox" onclick="check" id="checkbox">
+<button onclick="submit()">发送</button>
+<button onclick="clear()">Reset</button>
+<button onclick="user2()">User2</button>
+
+<script src="../bootstrap_jquery/static/plugins/jquery/jquery-1.12.3.min.js"></script>
+<script>
+    var output = {
+        name:'',
+        gender:'',
+        passcode:''
+    };
+    var out=[];
+    function submit() {
+        output.name=$("#name");
+        output.gender=$("#gender");
+        output.passcode=$("#passcode");
+        out.push(output);
+        console.log(output);
+        console.log(out)
+    }
+
+    function clear(){
+        output.name='';
+        output.gender='';
+        output.passcode='';
+        console.log(output)
+    }
+    function user2() {
+        output.name= "abo";
+        output.gender="female";
+        output.passcode="1998";
+        out.push(output);
+        console.log(output);
+        $("#name").value=output.name;
+        $("#gender").value=output.gender;
+        $("#passcode").value=output.passcode;
+    }
+</script>
+</body>
+</html>

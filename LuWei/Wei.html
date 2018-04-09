@@ -14,7 +14,33 @@
         </div>
     </div>
 </div>
+<b>姓名</b><input type="text" id="username" placeholder="请输入姓名"><br>
+<b>性别</b><select name="性别"id="sex">
+    <option value="保密">保密</option>
+    <option value="男">男</option>
+    <option value="女">女</option>
+</select><br>
+<b>密码</b><input type="password" id="password" placeholder="请输入密码"><br>
+<b>确认</b><input type="radio" name="确认" checked="checked">
+<button onclick="save()"><b>提交</b></button><br>
+<button onclick="reset()">重置</button><br>
+<button onclick="pre()">预设</button>
 <script>
+
+    function save(){
+        var username=document.getElementById("username").value
+        var sex=document.getElementById("sex").value
+        var password=document.getElementById("password").value
+        alert(username+sex+password)
+    }
+    function reset(){
+        $("#username").val("")
+        $("#sex").val("保密")
+        $("#password").val("")
+    }
+    function pre(){
+        
+    }
  function d2B(){
      var x=document.getElementById("binary").value
      var output=[]
@@ -31,5 +57,8 @@
 
 </script>
 
+
+
  </body>
+<script src="../bootstrap_jquery/static/plugins/jquery/jquery-1.12.3.min.js"></script>
 </html>
