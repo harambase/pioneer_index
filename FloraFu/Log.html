@@ -5,7 +5,7 @@
     <title>log in page</title>
 </head>
 <body>
-<h2>注册用户：</h2>
+<div id="hide"><h2>注册用户：</h2>
 <p>姓名：<input type="text" id = "name" value="" placeholder="请输入姓名"></p>
 <p>性别：<select id="gender">
     <option value = "male">男</option>
@@ -13,43 +13,68 @@
     <option value = "default">默认</option>
 </select>
 <p>密码：<input type="password" id="passcode" value="" placeholder="请输入密码"></p>
-请确认<input type="checkbox" onclick="check" id="checkbox">
+请确认<input type="checkbox" id="confirm"><br>
+    <button onclick="hideMe()">隐藏</button>
+</div>
 <button onclick="submit()">发送</button>
 <button onclick="clear()">Reset</button>
-<button onclick="user2()">User2</button>
+<button onclick="preset()">预设</button>
+<button onclick="display()" style="display:none" id="display">显示</button>
+<button onclick="del()">清空</button>
+<button onclick="add()">添加</button>
 
 <script src="../bootstrap_jquery/static/plugins/jquery/jquery-1.12.3.min.js"></script>
 <script>
-    var output = {
+    var user = {
         name:'',
         gender:'',
         passcode:''
     };
-    var out=[];
+    var addHTML='<div>Milly</div>'+'<div><input type="name"></div>'+'<div id="hide"></div>';
+    function add(){
+        $("#hide").html(addHTML)
+    }
+    function hideMe(){
+        $("#hide").css({display:"none"});
+        $("#display").css({display:"block"})
+    }
+    function display(){
+        $("#hide").css({display:"block"});
+        $("#display").css({display:"none"})
+    }
     function submit() {
-        output.name=$("#name");
-        output.gender=$("#gender");
-        output.passcode=$("#passcode");
-        out.push(output);
-        console.log(output);
-        console.log(out)
+        var isConform=$("#confirm").prop("checked");
+        if(isConform) {
+            user.name = $("#name").val();
+            user.gender = $("#gender").val();
+            user.passcode = $("#passcode").val();
+            console.log(user);
+        }else{
+            alert("请确认！")
+        }
     }
-
     function clear(){
-        output.name='';
-        output.gender='';
-        output.passcode='';
-        console.log(output)
+        $("#name").val('');
+        $("#gender").val('');
+        $("#passcode").val('');
+        user = {
+            name:'',
+            gender:'',
+            passcode:''
+        };
     }
-    function user2() {
-        output.name= "abo";
-        output.gender="female";
-        output.passcode="1998";
-        out.push(output);
-        console.log(output);
-        $("#name").value=output.name;
-        $("#gender").value=output.gender;
-        $("#passcode").value=output.passcode;
+    var user2 ={
+      name:"meow",
+      gender:"female",
+      passcode:"meow"
+    };
+    function preset(){
+        $("#name").val(user2.name);
+        $("#gender").val(user2.gender);
+        $("#passcode").val(user2.passcode)
+    }
+    function del(){
+        $("#hide").html('')
     }
 </script>
 </body>
