@@ -30,7 +30,17 @@
         gender:'',
         passcode:''
     };
-    var addHTML='<div>Milly</div>'+'<div><input type="name"></div>'+'<div id="hide"></div>';
+    var addHTML='<div>Milly</div>'+'<div><input type="name"></div>'+'<div id="hide"><h2>注册用户：</h2>\n' +
+        '<p>姓名：<input type="text" id = "name" value="" placeholder="请输入姓名"></p>\n' +
+        '<p>性别：<select id="gender">\n' +
+        '    <option value = "male">男</option>\n' +
+        '    <option value = "female">女</option>\n' +
+        '    <option value = "default">默认</option>\n' +
+        '</select>\n' +
+        '<p>密码：<input type="password" id="passcode" value="" placeholder="请输入密码"></p>\n' +
+        '请确认<input type="checkbox" id="confirm"><br>\n' +
+        '    <button onclick="hideMe()">隐藏</button>\n' +
+        '</div>';
     function add(){
         $("#hide").html(addHTML)
     }
