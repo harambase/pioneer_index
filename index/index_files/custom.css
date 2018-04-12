@@ -1029,16 +1029,16 @@ a:hover {
     width: 390px
 }
 
-.s-home-item4 .evaluate {
+.s-home-item4 .graduate {
     padding: 86px 46px 100px;
     text-align: center
 }
 
-.s-home-item4 .evaluate-top {
+.s-home-item4 .graduate-top {
     margin-bottom: 23px
 }
 
-.s-home-item4 img.evaluate-pic {
+.s-home-item4 img.graduate-pic {
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -1048,24 +1048,24 @@ a:hover {
     border-radius: 50%
 }
 
-.s-home-item4 .evaluate-name {
+.s-home-item4 .graduate-name {
     color: #666;
     font-size: 16px;
     margin-bottom: 6px
 }
 
-.s-home-item4 .evaluate-score {
+.s-home-item4 .graduate-score {
     color: #4c91ff;
     font-size: 18px;
     margin-bottom: 6px
 }
 
-.s-home-item4 .evaluate-time {
+.s-home-item4 .graduate-time {
     color: #666;
     font-size: 14px
 }
 
-.s-home-item4 .evaluate-content {
+.s-home-item4 .graduate-content {
     font-size: 14px;
     color: #333;
     text-align: left
