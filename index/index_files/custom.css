@@ -7,7 +7,7 @@ body, html {
 }
 
 html {
-    background: url(/tempBG.jpg) repeat
+    background: url(./tempBG.jpg) repeat
 }
 
 body {
@@ -101,11 +101,12 @@ a:hover {
 }
 
 .g-www-header .logo {
+    float: left;
     width: 140px;
     height: 80px;
     overflow: hidden;
     display: block;
-    background: url(/logo.jpg) no-repeat;
+    background: url(./logo.jpg) no-repeat;
     text-indent: -9999px;
     background-size: cover
 }
@@ -488,7 +489,6 @@ a:hover {
     width: 54px;
     height: 22px;
     display: block;
-    background: url(/dist/www/css/img/newhome/home-dot.png) repeat-x 0 0
 }
 
 .s-item-title .main-title:before {
@@ -551,7 +551,6 @@ a:hover {
     overflow: hidden;
     text-indent: -999px;
     display: block;
-    background: url(/dist/www/css/img/newhome/home-ill.jpg?20160811) no-repeat
 }
 
 .s-home-item1 .item-list .toefl .ill-wrap {
@@ -590,27 +589,6 @@ a:hover {
     padding: 15px 0 0 14px;
     background: #fff;
     cursor: pointer
-}
-
-.s-home-item1 .item-list .gre .rel-app {
-    position: relative;
-    height: 97px;
-    padding: 11px 0 0;
-    background: #fff;
-    cursor: pointer
-}
-
-.s-home-item1 .item-list .gre .rel-app .rel-app-box {
-    width: 50%;
-    text-align: center;
-    float: left;
-    position: relative;
-    font-size: 0;
-    height: 97px
-}
-
-.s-home-item1 .item-list .rel-app .app-bg {
-    background: url(/dist/www/css/img/newhome/newhome-app.png?20180201) no-repeat
 }
 
 .s-home-item1 .item-list .rel-app:after, .s-home-item1 .item-list .rel-app:before {
@@ -723,13 +701,13 @@ a:hover {
 }
 
 .s-home-item2 {
-    background: #fbfbfb url(/tempStyle.jpg) repeat-x left top
+    background: #fbfbfb url(./tempStyle.jpg) repeat-x left top
 }
 
 .s-home-item2 .layout-outer {
     height: 1360px;
     min-width: 980px;
-    background: url(/tempStyle.jpg) no-repeat center bottom
+    background: url(./tempStyle.jpg) no-repeat center bottom
 }
 
 .s-home-item2 .item-list li {
@@ -739,7 +717,7 @@ a:hover {
     height: 488px;
     padding: 132px 47px 0;
     margin-right: 35px;
-    background: url(/dist/www/css/img/newhome/home-item2-box.png?20160811) no-repeat 0 0
+    background: url(./tempStyle.jpg) no-repeat 0 0
 }
 
 .s-home-item2 .item-list li:hover {
@@ -757,7 +735,7 @@ a:hover {
     width: 46px;
     height: 55px;
     margin-left: -23px;
-    background: url(/dist/www/css/img/newhome/home-item2-icon.png) no-repeat 0 0
+    background: url(./tempStyle.jpg) no-repeat 0 0
 }
 
 .s-home-item2 .item-list .item-ico.item-aio {
@@ -1027,26 +1005,6 @@ a:hover {
     border-left: 0
 }
 
-.s-home-item4 .eva-bg-pic {
-    display: block;
-    width: 148px;
-    height: 23px;
-    margin: 0 auto;
-    background: url(/dist/www/css/img/newhome/item3-toefl.png) no-repeat
-}
-
-.s-home-item4 li.ielts .eva-bg-pic {
-    background: url(/dist/www/css/img/newhome/item3-ielts.png) no-repeat
-}
-
-.s-home-item4 li.gre .eva-bg-pic {
-    background: url(/dist/www/css/img/newhome/item3-gre.png) no-repeat
-}
-
-.s-home-item4 li.gmat .eva-bg-pic {
-    background: url(/dist/www/css/img/newhome/item3-gmat.png) no-repeat
-}
-
 .s-home-item4 .kemu-wrap {
     width: 1180px;
     height: 482px;
@@ -1128,13 +1086,13 @@ a:hover {
 
 .s-home-item4 .left {
     float: left;
-    background: url(/dist/www/css/img/newhome/change-left.png) center no-repeat;
+    /*background: url(/dist/www/css/img/newhome/change-left.png) center no-repeat;*/
     margin-right: 50px
 }
 
 .s-home-item4 .right {
     float: left;
-    background: url(/dist/www/css/img/newhome/change-right.png) center no-repeat
+    /*background: url(/dist/www/css/img/newhome/change-right.png) center no-repeat*/
 }
 
 .s-home-item4 .num-list li {
