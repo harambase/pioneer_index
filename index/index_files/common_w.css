@@ -2863,7 +2863,7 @@ a:hover {
     top: 30px;
     width: 17px;
     height: 16px;
-    background: #fff url(/dist/common/css/img/pioneer_hd_bg.png?2016713) no-repeat -61px 0
+    background: #fff url(/tempBG.jpg) no-repeat -61px 0
 }
 
 .g-extend-header-course .g-navigator-v4 .aside-nav-list .aside-nav.mycourse:hover:before {
