@@ -105,7 +105,7 @@ a:hover {
     height: 80px;
     overflow: hidden;
     display: block;
-    background: url(/dist/common/css/img/logo_www@2x.png?20180322) no-repeat;
+    background: url(/logo.jpg) no-repeat;
     text-indent: -9999px;
     background-size: cover
 }
@@ -723,13 +723,13 @@ a:hover {
 }
 
 .s-home-item2 {
-    background: #fbfbfb url(/dist/www/css/img/newhome/home-item-2-2.png) repeat-x left top
+    background: #fbfbfb url(/tempStyle.jpg) repeat-x left top
 }
 
 .s-home-item2 .layout-outer {
     height: 1360px;
     min-width: 980px;
-    background: url(/dist/www/css/img/newhome/home-item-2.jpg) no-repeat center bottom
+    background: url(/tempStyle.jpg) no-repeat center bottom
 }
 
 .s-home-item2 .item-list li {
