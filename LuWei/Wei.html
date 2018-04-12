@@ -6,59 +6,94 @@
 </head>
 <body>
 <div class="left" weith="50%">
-    <div class="left col-md-6">
+    <div class="left col-md-6" id="hideme">
         <img src="/pioneer_index/LuWei/123/images/111.gif">
         <div class="row col-md-6">
-            计算<input type="text"  id="binary" value="" placeholder="二进制转换">
+            计算<input type="text" id="binary" value="" placeholder="二进制转换">
             <button onclick="d2B()"><b>计算</b></button>
+            <button onclick="hideme()">隐藏</button>
         </div>
     </div>
+    <button onclick="block()">显示</button>
 </div>
 <b>姓名</b><input type="text" id="username" placeholder="请输入姓名"><br>
-<b>性别</b><select name="性别"id="sex">
+<b>性别</b><select name="性别" id="sex">
     <option value="保密">保密</option>
     <option value="男">男</option>
     <option value="女">女</option>
 </select><br>
 <b>密码</b><input type="password" id="password" placeholder="请输入密码"><br>
 <b>确认</b><input type="radio" name="确认" checked="checked">
-<button onclick="save()"><b>提交</b></button><br>
-<button onclick="reset()">重置</button><br>
+
+<button onclick="save()"><b>提交</b></button>
+<br>
+<button onclick="reset()">重置</button>
+<br>
 <button onclick="pre()">预设</button>
+<br>
+<button onclick="blank()">清空</button>
+<button onclick="retur()">还原</button>
+
 <script>
 
-    function save(){
-        var username=document.getElementById("username").value
-        var sex=document.getElementById("sex").value
-        var password=document.getElementById("password").value
-        alert(username+sex+password)
+    function retur() {
+        $("#hideme").html('<div class="left col-md-6">' +
+            ' <img src="/pioneer_index/LuWei/123/images/111.gif">' +
+            '<div class="row col-md-6">' +
+            '计算<input type="text"  id="binary" value="" placeholder="二进制转换">' +
+            '<button onclick="d2B()"><b>计算</b></button>' +
+            '<button onclick="hideme()">隐藏</button>' +
+            '</div>' +
+            '</div>')
     }
-    function reset(){
+
+    function blank() {
+        $("#hideme").html('')
+    }
+
+    function hideme() {
+        $("#hideme").css({display: "none"})
+    }
+
+    function block() {
+        $("#hideme").css({display: "block"})
+    }
+
+    function save() {
+        var username = document.getElementById("username").value
+        var sex = document.getElementById("sex").value
+        var password = document.getElementById("password").value
+        alert(username + sex + password)
+    }
+
+    function reset() {
         $("#username").val("")
         $("#sex").val("保密")
         $("#password").val("")
     }
-    function pre(){
-        
+
+    function pre() {
+        $("#username").val("用户名")
+        $("#sex").val("男")
+        $("#password").val("password")
     }
- function d2B(){
-     var x=document.getElementById("binary").value
-     var output=[]
-     while(x!==0)
-     {
-         var y=x%2
-         output.push(y)
-         x=Math.floor(x/2)
-     }
-     var outputlength=output.length
-     for(var i=outputlength-1;i>=0;i--)
-         console.log(output)
- }
+
+    function d2B() {
+        var x = document.getElementById("binary").value
+        var output = []
+        while (x !== 0) {
+            var y = x % 2
+            output.push(y)
+            x = Math.floor(x / 2)
+        }
+        var outputlength = output.length
+        for (var i = outputlength - 1; i >= 0; i--)
+            console.log(output)
+    }
 
 </script>
 
 
-
- </body>
+</body>
 <script src="../bootstrap_jquery/static/plugins/jquery/jquery-1.12.3.min.js"></script>
 </html>
