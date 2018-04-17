@@ -25,7 +25,7 @@ public class WebController {
 
     @RequestMapping("/index")
     public String welcome() {
-        return "index";
+        return "index_temp";
     }
 
 }

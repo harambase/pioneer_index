@@ -31,12 +31,6 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>com.harambase.pioneer</groupId>
-            <artifactId>pioneer-common-package</artifactId>
-            <version>1.0</version>
-        </dependency>
-
         <!--thymeleaf非严格模式-->
         <dependency>
             <groupId>net.sourceforge.nekohtml</groupId>
