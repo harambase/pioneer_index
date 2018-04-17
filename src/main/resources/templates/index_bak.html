@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:v-on="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="" name="description"/>
+    <meta content="harambase" name="shilei"/>
+
+    <title>主页</title>
+
+    <link rel="stylesheet" href="/static/plugins/confirm/confirm.css">
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/plugins/font/font.css"/>
+    <link rel="stylesheet" href="/static/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/styles/custom-styles.css"/>
+    <link rel="stylesheet" href="/static/styles/myCourse.css">
+
+</head>
+
+<body>
+<div id="wrapper">
+    <!--/. NAV TOP  -->
+    <div th:include="/common :: navtop" class="sidebar-collapse"></div>
+
+    <!-- /. NAV SIDE  -->
+    <div th:include="/common :: navbar" class="sidebar-collapse"></div>
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header">
+                先锋OA系统
+                <small id="name"
+                       th:text="'Welcome back!'"></small>
+            </h1>
+        </div>
+        <div id="page-inner">
+            <div class="row" id="myCoursePage">
+
+                <div class="col-md-12" v-if="courseList.length > 0">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h1 style="font-size: 20px">我的课程</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="firstStep clearfix" v-for="course in courseList">
+                                        <div class="lessons-item js-lessons-item g-clearfix">
+                                            <a :href="'/course/detail?pageMode=student&crn=' + course.crn">
+                                                <div class="lessons-pic">
+                                                    <img width="200" height="200" src="/static/images/harambe.png">
+                                                </div>
+                                                <div class="lessons-info">
+                                                    <h3 class="info-tile">{{course.name}}
+                                                        ({{course.level}}/{{course.section}})</h3>
+
+                                                    <div class="lessons-live">
+                                                        <span class="space">课程周期: {{course.date}}</span>
+                                                        <span class="">课程时间：{{course.time}} {{course.day}}</span>
+                                                    </div>
+                                                    <div class="lessons-complete">
+                                                        <span>教师：<span
+                                                                class="js-lesson-record">{{course.faculty}}</span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="lessons-operate">
+                                                    <div class="status being">进行中</div>
+                                                    <div class="enter-class">进入课程</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+                <div class="col-md-12" v-if="teachList.length > 0">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h1 style="font-size: 20px">我教的课程</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="firstStep clearfix" v-for="course in teachList">
+                                        <div class="lessons-item js-lessons-item g-clearfix"
+                                             v-if="course.status !== -1">
+                                            <a :href="'/course/detail?pageMode=faculty&crn=' + course.crn">
+                                                <div class="lessons-pic">
+                                                    <img width="200" height="200" src="/static/images/harambe.png">
+                                                </div>
+                                                <div class="lessons-info">
+                                                    <h3 class="info-tile">{{course.name}}
+                                                        ({{course.level}}/{{course.section}})</h3>
+
+                                                    <div class="lessons-live">
+                                                        <span class="space">课程周期: {{course.date}}</span>
+                                                        <span class="space">课程时间：{{course.time}}</span>
+                                                        <span class="">课程星期：{{course.day}}</span>
+                                                    </div>
+                                                    <div class="lessons-complete">
+                                                    <span class="space">学生人数：
+                                                        <span class="js-lesson-complete">{{course.capacity-course.remain}}</span>
+                                                    </span>
+                                                        <span class="space">剩余：
+                                                            <span class="js-lesson-rate">{{course.remain}}</span>
+                                                        </span>
+                                                        <span>教室：
+                                                            <span class="js-lesson-record">{{course.classroom}}
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="lessons-operate">
+                                                    <div class="status being" v-if="course.status === 0">进行中</div>
+                                                    <div class="status before" v-if="course.status === 1">未开始</div>
+                                                    <div class="enter-class">进入课程</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-footer" id=footerPlaceholder">
+            <div th:include="/common :: footer" id="copyright"></div>
+        </div>
+        <!-- /. PAGE INNER  -->
+    </div>
+    <!-- /. PAGE WRAPPER  -->
+</div>
+<!-- /. WRAPPER  -->
+<div th:include="/common :: load_js(false, false, false)"></div>
+<script>
+
+    function goto(crn) {
+        window.location.href="/course/detail?pageMode=student&crn=" + crn;
+    }
+
+    var myCourseVue = new Vue({
+        el: "#myCoursePage",
+        data: {
+            courseList: [],
+            teachList: [],
+            pageMode: location.search.split("&")[0].split("=")[1],
+        },
+        mounted: function () {
+            initTeachList();
+            initCourseList();
+        }
+    });
+
+    function initTeachList() {
+        axios.get('/course?mode=faculty').then(function (response) {
+            myCourseVue.$data.teachList = response.data.data;
+        });
+    }
+
+    function initCourseList() {
+        axios.get('/student/course?status=0').then(function (response) {
+            myCourseVue.$data.courseList = response.data.data;
+        });
+    }
+</script>
+</body>
+</html>
