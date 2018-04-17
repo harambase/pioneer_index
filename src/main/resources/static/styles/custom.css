@@ -7,7 +7,7 @@ body, html {
 }
 
 html {
-    background: url(./tempBG.jpg) repeat
+    background: url(../images/tempBG.jpg) repeat
 }
 
 body {
@@ -106,7 +106,7 @@ a:hover {
     height: 80px;
     overflow: hidden;
     display: block;
-    background: url(./logo.jpg) no-repeat;
+    background: url(../images/logo.jpg) no-repeat;
     text-indent: -9999px;
     background-size: cover
 }
@@ -701,13 +701,13 @@ a:hover {
 }
 
 .s-home-item2 {
-    background: #fbfbfb url(./tempStyle.jpg) repeat-x left top
+    background: #fbfbfb url(../images/tempStyle.jpg) repeat-x left top
 }
 
 .s-home-item2 .layout-outer {
     height: 1360px;
     min-width: 980px;
-    background: url(./tempStyle.jpg) no-repeat center bottom
+    background: url(../images/tempStyle.jpg) no-repeat center bottom
 }
 
 .s-home-item2 .item-list li {
@@ -717,7 +717,7 @@ a:hover {
     height: 488px;
     padding: 132px 47px 0;
     margin-right: 35px;
-    background: url(./tempStyle.jpg) no-repeat 0 0
+    background: url(../images/tempStyle.jpg) no-repeat 0 0
 }
 
 .s-home-item2 .item-list li:hover {
@@ -735,7 +735,7 @@ a:hover {
     width: 46px;
     height: 55px;
     margin-left: -23px;
-    background: url(./tempStyle.jpg) no-repeat 0 0
+    background: url(../images/tempStyle.jpg) no-repeat 0 0
 }
 
 .s-home-item2 .item-list .item-ico.item-aio {
