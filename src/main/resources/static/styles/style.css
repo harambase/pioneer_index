@@ -203,44 +203,17 @@ body a:hover{
 }
 /*------------------ Slider Part ends Here----------*/
 .banner{
-	background:url(../images/banner.jpg) no-repeat 0px 0px;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
 	min-height:700px;
 }
-.banner1{
-	background:url(../images/banner.jpg) no-repeat 0px 0px;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	min-height:300px;
-}
 .banner-info {
-    background: url(../images/dott.png)repeat 0px 0px;
-    background-size: 4px;
-    -webkit-background-size: 4px;
-    -moz-background-size: 4px;
-    -o-background-size: 4px;
-    -ms-background-size: 4px;
-    min-height:700px;
     padding: 2em 0;
 }
 .banner-info1 {
-    background: url(../images/dott.png)repeat 0px 0px;
-    background-size: 4px;
-    -webkit-background-size: 4px;
-    -moz-background-size: 4px;
-    -o-background-size: 4px;
-    -ms-background-size: 4px;
-    min-height:300px;
+    height:110px;
     padding: 2em 0;
 }
 .navbar-brand{
 	font-size: 2.5em;
-    color: #fff !important;
     text-decoration: none;
     text-transform: uppercase;
     height: 85px;
@@ -266,10 +239,9 @@ body a:hover{
     margin: 0;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
     font-size: 14px;
-    padding: 18px 15px 0;
-    font-weight: 400;
+    padding: 24px 15px 0;
+    font-weight: 800;
     text-transform: uppercase;
 }
 .navbar-nav {
