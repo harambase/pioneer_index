@@ -28,4 +28,8 @@ public class WebController {
         return "index_temp";
     }
 
+    @RequestMapping("/breaking")
+    public String breaking() {
+        return "demo/breaking";
+    }
 }
