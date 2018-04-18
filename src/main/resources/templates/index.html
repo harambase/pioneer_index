@@ -1,31 +1,12 @@
 <!DOCTYPE html>
-<html class="pioneer_index">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns:th="http://www.thymeleaf.org" class="pioneer_index" lang="zh">
 
-    <title>先锋教育学校</title>
-    <meta name="keywords" content="先锋教育">
-    <meta name="description" content="【网页介绍】 【网页内容】 【服务内容】">
-    <link rel="icon" href="http://www.xianfengedu.org/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="http://www.xianfengedu.org/favicon.ico" type="image/x-icon">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link type="text/css" rel="stylesheet" href="/static/styles/custom.css">
+<head th:include="/common :: header('先锋教育学校')"></head>
 
-</head>
- <body>
-<div class="g-www-header">
-    <div class="outer g-clearfix">
-        <h1 class="logo">
-        </h1>
-        <ul class="navigator">
-            <li><a class="nav" href="#">主页</a></li>
-            <li><a class="nav" href="#">1</a></li>
-            <li><a class="nav" href="#">2</a></li>
-            <li><a class="nav" href="#">3</a></li>
-            <li><a class="nav" href="#">4</a></li>
-        </ul>
-    </div>
-</div>
+<body>
+<!-- banner -->
+<div th:include="/common :: navtop" class="sidebar-collapse"></div>
+
 <!--item-1-->
 <div class="s-home-layout s-home-item1">
     <div class="layout-inner">
@@ -38,6 +19,7 @@
 
 <!--item-2-->
 <div class="s-home-layout s-home-item2">
+    <div th:include="/common :: moveText" class="sidebar-collapse"></div>
     <div class="layout-outer">
         <div class="layout-inner">
             <h2 class="s-item-title">
@@ -48,6 +30,7 @@
     </div>
 </div>
 
+<!--item-3-->
 <div class="s-home-layout s-home-item3">
     <div class="layout-outer">
         <div class="layout-inner">
@@ -195,7 +178,8 @@
         </div>
     </div>
 </div>
-<!-- end -->
+
+<!--item-5-->
 <div class="s-home-layout s-home-item5">
     <div class="layout-outer">
         <div class="layout-inner">
@@ -280,95 +264,13 @@
     </div>
 </div>
 
-<div class="js-pioneer-footer">
-    <div class="g-pioneer-footer">
-        <div class="pioneer-footer-top">
-            <div class="footer-top clearfix">
-                <div class="footer-top-column">
-                    <h2>覆盖考试</h2>
-                    <ul>
-                        <li>
-                            <a href="http://act.pioneer.com/" target="_blank">ACT</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-top-column">
-                    <h2>我们的课程</h2>
-                    <ul>
-                        <li>
-                            <a href="http://ke.pioneer.com/lesson/toefl" target="_blank">TOEFL课程</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-top-column">
-                    <h2>我们的App</h2>
-                    <ul>
-                        <li>
-                            <a href="#" target="_blank">考满分课程
-                                <div class="site-qrcode-pop">
-                                    <div class="site-qrcode class">
-                                    </div>
-                                    <p>考满分课程</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-top-column">
-                    <h2>关注我们</h2>
-                    <ul>
-                        <li>
-                            <a href="javascript:;">微信
-                                <div class="wx-popup">
-                                    <div class="wx-popup-item">
-                                        <div class="wx-qrcode exam"></div>
-                                        <p>留学备考</p>
-                                    </div>
-                                    <div class="wx-popup-item">
-                                        <div class="wx-qrcode live"></div>
-                                        <p>留学生活</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">微博</a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">Twitter</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-top-column">
-                    <h2>联系我们</h2>
-                    <ul>
-                        <li>
-                            <a href="#" target="_blank">反馈建议</a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">投诉举报</a>
-                        </li>
-                        <li>
-                            <a href="#" class="no-event"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="pioneer-footer-bottom">
-            <div class="footer-bottom clearfix">
-                <div class="footer-nav-copyright">
-                    <p class="footer-copyrights">
-                        Copyright©2018 成都知识城教育咨询有限公司 xianfengedu.org <br>成都知识城教育咨询有限公司 版权所有
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- footer -->
+<div th:include="/common :: footer" id="copyright"></div>
+<!-- //footer -->
 
+<div th:include="/common :: load_js"></div>
+<script>
+    $('.marquee').marquee({pauseOnHover: true});
+</script>
 </body>
 </html>

@@ -2,21 +2,28 @@
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="创新教育 教育咨询 培训 留学" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="创新教育 教育咨询 培训 留学"/>
     <meta content="" name="description"/>
     <meta content="先锋教育" name="author"/>
 
     <title th:text="${title}"></title>
 
     <script type="application/x-javascript">
-        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
     </script>
 
     <link media="all" type='text/css' rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css"/>
     <link media="all" type='text/css' rel="stylesheet" href="/static/styles/style.css"/>
     <link media="all" type='text/css' rel="stylesheet" href="/static/styles/custom.css"/>
-    <link media="all" type='text/css' rel="stylesheet" href='https://fonts.googleapis.com/css?family=Oswald:400,300,700'>
+    <link media="all" type='text/css' rel="stylesheet"
+          href='https://fonts.googleapis.com/css?family=Oswald:400,300,700'>
     <link rel="stylesheet" href="/static/plugins/font/font.css"/>
     <link rel="stylesheet" href="/static/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
 
@@ -29,14 +36,17 @@
                 <nav class="navbar navbar-default">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
                         <div class="logo">
-                            <a class="navbar-brand" href="/index"><span><img style="width: 50px; height:50px;" src="/static/images/logo.png"/></span> <strong>先锋教育</strong></a>
+                            <a class="navbar-brand" href="/index"><span><img style="width: 50px; height:50px;"
+                                                                             src="/static/images/logo.png"/></span>
+                                <strong>先锋教育</strong></a>
                         </div>
                     </div>
 
@@ -51,8 +61,9 @@
 
                             <li><a href="/graduates">毕业生去向</a></li>
                             <li role="presentation" class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                     先锋分支 <span class="caret"></span>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    先锋分支 <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="/middle">中学部</a></li>
@@ -70,7 +81,6 @@
     </div>
 </div>
 
-
 <div th:fragment="footer" xmlns:th="http://www.thymeleaf.org">
     <div class="footer-top">
     </div>
@@ -87,9 +97,13 @@
                         <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>成都市新都区斑竹园镇</li>
                         <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+028 83964698</li>
                         <li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>17780622519</li>
-                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="875699924@qq.com">875699924@qq.com</a></li>
-                        <li><span><i style="margin-left: -15px;" class="fa fa-qq"></i></span><a style="margin-left: 15px;"href="//wpa.qq.com/msgrd?v=3&uin=821978672&site=qq&menu=yes">点击联系桔子老师</a></li>
-                        <li><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>如果您想参观学校，请提前三日联系我们。</li>
+                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a
+                                href="875699924@qq.com">875699924@qq.com</a></li>
+                        <li><span><i style="margin-left: -15px;" class="fa fa-qq"></i></span><a
+                                style="margin-left: 15px;" href="//wpa.qq.com/msgrd?v=3&uin=821978672&site=qq&menu=yes">点击联系桔子老师</a>
+                        </li>
+                        <li><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>如果您想参观学校，请提前三日联系我们。
+                        </li>
                     </ul>
 
                 </div>
@@ -104,15 +118,31 @@
 						great explorer.</span>
                         <i>- The Entire TLG Team</i></p>
                 </div>
-                <div class="clearfix"> </div>
+                <div class="clearfix"></div>
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom-left">
                     <p> Copyright ©2018 成都知识城教育咨询有限公司 xianfengedu.org 版权所有</p>
                 </div>
-                <div class="clearfix"> </div>
+                <div class="clearfix"></div>
             </div>
         </div>
+    </div>
+</div>
+
+<div th:fragment="moveText" xmlns:th="http://www.thymeleaf.org">
+    <div class="move-text">
+        <div class="breaking_news">
+            <h2>最新消息</h2>
+        </div>
+        <div class="marquee">
+            <div class="marquee1"><a class="breaking" href="single.html">A 5-year-old boy who recently returned to
+                the U.S from Ebola-stricken West Africa is under observation after experiencing a fever.</a></div>
+            <div class="marquee2"><a class="breaking" href="single.html">The surprisingly successful president of
+                the Philippines and peacemaking in the Philippines: Shaking it all up.</a></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
     </div>
 </div>
 

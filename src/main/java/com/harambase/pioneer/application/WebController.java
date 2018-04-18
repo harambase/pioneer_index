@@ -25,11 +25,16 @@ public class WebController {
 
     @RequestMapping("/index")
     public String welcome() {
-        return "index_temp";
+        return "index";
     }
 
     @RequestMapping("/breaking")
     public String breaking() {
         return "demo/breaking";
+    }
+
+    @RequestMapping("/contact")
+    public String contact() {
+        return "demo/contact";
     }
 }
