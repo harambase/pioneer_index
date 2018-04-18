@@ -13,9 +13,11 @@
         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
     </script>
 
-    <link href="/static/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="/static/styles/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link media="all" type='text/css' rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css"/>
+    <link media="all" type='text/css' rel="stylesheet" href="/static/styles/style.css"/>
+    <link media="all" type='text/css' rel="stylesheet" href='https://fonts.googleapis.com/css?family=Oswald:400,300,700'>
+    <link rel="stylesheet" href="/static/plugins/font/font.css"/>
+    <link rel="stylesheet" href="/static/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -33,28 +35,31 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="logo">
-                            <a class="navbar-brand" href="index.html"><span>N</span> News Times</a>
+                            <a class="navbar-brand" href="/index"><span><img style="width: 50px; height:50px;" src="/static/images/logo.png"/></span> <strong>先锋<br>教育</strong></a>
                         </div>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav cl-effect-18" id="cl-effect-18">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="events.html">Current events</a></li>
-                            <li class="act"><a href="breaking.html" class="active">Breaking stories</a></li>
-                            <li><a href="entertainment.html">Entertainment</a></li>
+                        <ul class="nav navbar-nav cl-effect-14" id="cl-effect-14">
+                            <li><a href="/about">关于我们</a></li>
+                            <li><a href="/news">最新动态</a></li>
+                            <li><a href="/course">招生与课程</a></li>
+                            <li class="act"><a href="/teacher" class="active">教学团队</a></li>
+                            <li><a href="/activities">学生活动</a></li>
+
+                            <li><a href="/graduates">毕业生去向</a></li>
                             <li role="presentation" class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                    Business <span class="caret"></span>
+                                     先锋分支 <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="short-codes.html">Market</a></li>
-                                    <li><a href="short-codes.html">Reviews</a></li>
-                                    <li><a href="short-codes.html">Stock</a></li>
+                                    <li><a href="/middle">中学部</a></li>
+                                    <li><a href="/elementray">小学部</a></li>
+                                    <li><a href="/agora">深圳分校</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="/contact">联系我们</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
 
@@ -67,37 +72,28 @@
 
 <div th:fragment="footer" xmlns:th="http://www.thymeleaf.org">
     <div class="footer-top">
-        <div class="container">
-            <p>at least 150 missing and there dead in landslide after monsoon
-                rains in central Sri Lanka, officials say <a href="#">http//example.com</a></p>
-        </div>
     </div>
     <div class="footer">
         <div class="container">
             <div class="footer-grids">
                 <div class="col-md-4 footer-grid-left">
-                    <h3>twitter feed</h3>
+                    <h3>先锋教育微信公众号</h3>
+                    <img style="width: 200px; height: 200px;" src="/static/images/weChat.jpg"/>
+                </div>
+                <div class="col-md-4 footer-grid-left">
+                    <h3>联系我们</h3>
                     <ul>
-                        <li><a href="#">the moment an unlimited #antares rocket exploded seconds after launch
-                            <i>http//example.com</i></a><span>15 minutes ago</span></li>
-                        <li><a href="mailto:info@example.com" class="cols">@NASA</a> & <a href="mailto:info@example.com" class="cols">
-                            @orbital science</a> <a href="#">gathering data on failure #antares rocket bound
-                            for international space</a><span>45 minutes ago</span></li>
-                        <li><a href="#">ex-cabinet minister chris huhne loses legal challenge over $77,750
-                            court costs incurred in speeding points</a><span>1 day ago</span></li>
+                        <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>成都市新都区斑竹园镇</li>
+                        <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+028 83964698</li>
+                        <li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>17780622519</li>
+                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="875699924@qq.com">875699924@qq.com</a></li>
+                        <li><span><i style="margin-left: -15px;" class="fa fa-qq"></i></span><a style="margin-left: 15px;"href="//wpa.qq.com/msgrd?v=3&uin=821978672&site=qq&menu=yes">点击联系桔子老师</a></li>
+                        <li><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>如果您想参观学校，请提前三日联系我们。</li>
                     </ul>
+
                 </div>
                 <div class="col-md-4 footer-grid-left">
-                    <h3>contact form</h3>
-                    <form>
-                        <input type="text" value="enter your full name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter your full name';}" required="">
-                        <input type="email" value="enter your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter your email address';}" required="">
-                        <textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-                        <input type="submit" value="Submit" >
-                    </form>
-                </div>
-                <div class="col-md-4 footer-grid-left">
-                    <h3>about us</h3>
+                    <h3>先锋教育学校简介</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
@@ -111,14 +107,7 @@
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom-left">
-                    <p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-                </div>
-                <div class="footer-bottom-right">
-                    <ul>
-                        <li><a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a></li>
-                        <li><a href="#" class="icon-button google"><i class="icon-google"></i><span></span></a></li>
-                        <li><a href="#" class="icon-button v"><i class="icon-v"></i><span></span></a></li>
-                    </ul>
+                    <p> Copyright ©2018 成都知识城教育咨询有限公司 xianfengedu.org 版权所有</p>
                 </div>
                 <div class="clearfix"> </div>
             </div>
