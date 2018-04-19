@@ -37,4 +37,7 @@ public class WebController {
     public String contact() {
         return "demo/contact";
     }
+
+    @RequestMapping("/graduate")
+    public String graduate() { return "graduate"; }
 }
