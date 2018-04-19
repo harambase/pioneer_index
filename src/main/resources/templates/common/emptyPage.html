@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" class="pioneer_index" lang="zh">
+
+<head th:include="/common :: header('先锋教育学校')"></head>
+
+<body>
+<!-- banner -->
+<div th:include="/common :: navtop" class="sidebar-collapse"></div>
+
+<!-- footer -->
+<div th:include="/common :: footer" id="copyright"></div>
+<!-- //footer -->
+
+<div th:include="/common :: load_js"></div>
+<script>
+    $('.marquee').marquee({pauseOnHover: true});
+</script>
+</body>
+</html>
