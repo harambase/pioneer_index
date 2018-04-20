@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" class="pioneer_index" lang="zh">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:text-align="http://www.w3.org/1999/xhtml" class="pioneer_index"
+      lang="zh">
 
-<head th:include="/common :: header('先锋教育学校')"></head>
+<head th:include="/common :: header('先锋教育学校')">
+    <style>
+
+    </style>
+</head>
 
 <body>
-<div>
-    <a>李嘉和</a>
-</div>
-<!-- banner -->
-<div th:include="/common :: navtop" class="sidebar-collapse"></div>
 
-<!-- footer -->
-<div th:include="/common :: footer" id="copyright"></div>
-<!-- //footer -->
-
-<div th:include="/common :: load_js"></div>
 <script>
+
     $('.marquee').marquee({pauseOnHover: true});
+
 </script>
 </body>
 </html>
