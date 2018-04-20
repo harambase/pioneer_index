@@ -40,4 +40,10 @@ public class WebController {
 
     @RequestMapping("/about")
     public String about() { return "about"; }
+
+    @RequestMapping("/graduate")
+    public String graduate() { return "graduate"; }
+
+    @RequestMapping("/news")
+    public String news() { return "news"; }
 }
