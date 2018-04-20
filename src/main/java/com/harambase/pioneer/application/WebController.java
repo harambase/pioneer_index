@@ -38,6 +38,6 @@ public class WebController {
         return "demo/contact";
     }
 
-    @RequestMapping("/graduate")
-    public String graduate() { return "graduate"; }
+    @RequestMapping("/about")
+    public String about() { return "about"; }
 }
