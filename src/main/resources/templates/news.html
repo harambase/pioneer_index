@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" class="pioneer_index" lang="zh">
+<head th:include="/common :: header('先锋教育学校')">
+</head>
+
+<body>
+<style>
+    .col-md-12 {
+        font-size: xx-large;
+        padding-bottom: 10px;
+        border-bottom: #657068 3px solid;
+    }
+    .col-md-8{
+        margin-top: 20px;
+        padding-right: 30px;
+        padding-bottom:20px
+    }
+    .col-md-10 h1{
+        font-size: xx-large;
+    }
+    .col-md-8 h2{
+        border-bottom: #792329 3px solid;
+        font-size:large;
+        color: #bcbbbb;
+    }
+    .col-md-2 {
+        color: #cecece;
+        padding: 20px;
+        position: fixed;
+        top: 145px;
+        right: 230px;
+        font-size:large;
+        z-index:2;
+    }
+    .col-md-2 h1{
+        font-size: xx-large;
+        border-bottom: solid #5c90c5 3px;
+    }
+</style>
+<!-- banner -->
+<div th:include="/common :: navtop" class="sidebar-collapse"></div>
+<!--body -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 id="heading">每周动态</h1>
+        </div>
+        <div class="col-md-8">
+            <h2 id="2018-4-17">2018-4-17</h2>
+            <ul>
+                <img src="../static/images/block.jpg" width="150px" width="150px">
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
+                <img src="../static/images/block.jpg" width="150px" width="150px">
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
+                <img src="../static/images/block.jpg" width="150px" width="150px">
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
+            </ul>
+            其实呢这边可以用微信公众号的链接来显示，即写一小段简介，然后在结束的时候用一个"了解详情"导到微信公众号的网页链接
+        </div>
+        <div class="col-md-8">
+            <h2 id="2018-4-10">2018-4-10</h2>
+            <ul>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading</li><a href="#">Learn more</a>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading</li><a href="#">Learn more</a>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading</li><a href="#">Learn more</a>
+            </ul>
+        </div>
+
+        <div class="col-md-8">
+            <h2 id="2018-4-3">2018-4-3</h2>
+            <ul>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading</li><a href="#">Learn more</a>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading</li><a href="#">Learn more</a>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading</li><a href="#">Learn more</a>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <h1><a href="#heading">content</a></h1>
+            <ul>
+                <li><a href="#2018-4-17">2018-4-17</a></li>
+                <li><a href="#2018-4-10">2018-4-10</a></li>
+                <li><a href="#2018-4-3">2018-4-3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+
+</div>
+<!-- footer -->
+<div th:include="/common :: footer" id="copyright"></div>
+<!-- //footer -->
+
+<div th:include="/common :: load_js"></div>
+<script>
+    $('.marquee').marquee({pauseOnHover: true});
+</script>
+</body>
+</html>
