@@ -46,4 +46,7 @@ public class WebController {
 
     @RequestMapping("/news")
     public String news() { return "news"; }
+
+    @RequestMapping("/lessons")
+    public String lessons() { return "lessons"; }
 }
