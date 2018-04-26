@@ -50,6 +50,6 @@ public class WebController {
     @RequestMapping("/lessons")
     public String lessons() { return "lessons"; }
 
-    @RequestMapping("/lessons")
+    @RequestMapping("/tupian")
     public String tupian() { return "tupian"; }
 }
