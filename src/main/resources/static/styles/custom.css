@@ -6,6 +6,11 @@ body, html {
     -webkit-font-smoothing: antialiased
 }
 
+.bysbd
+{
+    height:192px;
+    width:341px
+}
 
 body {
     font: 14px/1.5 -apple-system, "San Francisco", "Helvetica Neue", Arial, "Segoe UI", "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft Yahei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", "驿微米黑", SimSun, sans-serif;
