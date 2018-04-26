@@ -6,6 +6,11 @@ body, html {
     -webkit-font-smoothing: antialiased
 }
 
+.标题文本居中
+{
+    text-align:center
+}
+
 .bysbd
 {
     height:192px;
