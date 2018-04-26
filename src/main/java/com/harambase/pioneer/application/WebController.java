@@ -49,4 +49,7 @@ public class WebController {
 
     @RequestMapping("/lessons")
     public String lessons() { return "lessons"; }
+
+    @RequestMapping("/lessons")
+    public String tupian() { return "tupian"; }
 }
