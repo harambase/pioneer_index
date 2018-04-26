@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" class="pioneer_index" lang="zh">
 
-<head th:include="/common :: header('先锋教育学校')"></head>
+<head th:include="/common :: header('先锋教育学校')">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../static/plugins/jquery/jquery-1.12.3.min.js"></script>
+    <script src="../static/plugins/jquery/jquery.easydropdown.js"></script>
+    <script type="text/javascript" src="../static/scripts/easing.js"></script>
+</head>
 
 <body>
 <!-- banner -->
@@ -9,98 +14,33 @@
 <div class="ourteam">
     <div class="container">
         <div class="team">
-            <ul id="flexiselDemo3">
-                <li>
+            <ul id="flexiselDemo3" class="nbs-flexisel-ul" style="left: -405px; display: block;">
+                <li class="nbs-flexisel-item" style="width: 405px;">
                     <div class="team1">
                         <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-                            <img src="images/team1.jpg" class="img-responsive" alt="" /></a>
-                        <div class="both">
-                            <div class="both-left">
-                                <h5>Sheak Reza</h5>
-                                <p>CEO, Both kicu</p>
-                            </div>
-                            <div class="both-right">
-                                <h6><a href="#">facebook</a> /<a href="#">twitter</a>
-                                    <a href="#">dribbble </a>/<a href="#"> linkedin</a></h6>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                            <img src="../static/images/1.jpg" class="img-responsive" alt=""></a>
                     </div>
-                </li>
-                <li>
+                </li><li class="nbs-flexisel-item" style="width: 405px;">
+                <li class="nbs-flexisel-item" style="width: 405px;">
                     <div class="team1">
                         <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-                            <img src="images/team2.jpg" class="img-responsive" alt="" /></a>
-                        <div class="both">
-                            <div class="both-left">
-                                <h5>Sheak Reza</h5>
-                                <p>CEO, Both kicu</p>
-                            </div>
-                            <div class="both-right">
-                                <h6><a href="#">facebook</a> /<a href="#">twitter</a>
-                                    <a href="#">dribbble </a>/<a href="#"> linkedin</a></h6>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                            <img src="../static/images/1.jpg" class="img-responsive" alt=""></a>
                     </div>
-                </li>
-                <li>
+                </li><li class="nbs-flexisel-item" style="width: 405px;">
+                <li class="nbs-flexisel-item" style="width: 405px;">
                     <div class="team1">
                         <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-                            <img src="images/team3.jpg" class="img-responsive" alt="" /></a>
-                        <div class="both">
-                            <div class="both-left">
-                                <h5>Sheak Reza</h5>
-                                <p>CEO, Both kicu</p>
-                            </div>
-                            <div class="both-right">
-                                <h6><a href="#">facebook</a> /<a href="#">twitter</a>
-                                    <a href="#">dribbble </a>/<a href="#"> linkedin</a></h6>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                            <img src="../static/images/1.jpg" class="img-responsive" alt=""></a>
                     </div>
-                </li>
-                <li>
+                </li><li class="nbs-flexisel-item" style="width: 405px;">
+                <li class="nbs-flexisel-item" style="width: 405px;">
                     <div class="team1">
                         <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-                            <img src="images/team2.jpg" class="img-responsive" alt="" /></a>
-                        <div class="both">
-                            <div class="both-left">
-                                <h5>Sheak Reza</h5>
-                                <p>CEO, Both kicu</p>
-                            </div>
-                            <div class="both-right">
-                                <h6><a href="#">facebook</a> /<a href="#">twitter</a>
-                                    <a href="#">dribbble </a>/<a href="#"> linkedin</a></h6>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                            <img src="../static/images/1.jpg" class="img-responsive" alt=""></a>
                     </div>
-                </li>
-                <li>
-                    <div class="team1">
-                        <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-                            <img src="images/team1.jpg" class="img-responsive" alt="" /></a>
-                        <div class="both">
-                            <div class="both-left">
-                                <h5>Sheak Reza</h5>
-                                <p>CEO, Both kicu</p>
-                            </div>
-                            <div class="both-right">
-                                <h6><a href="#">facebook</a> /<a href="#">twitter</a>
-                                    <a href="#">dribbble </a>/<a href="#"> linkedin</a></h6>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </div>
+                </li><li class="nbs-flexisel-item" style="width: 405px;">
+            </li></ul><div class="nbs-flexisel-nav-left" style="top: 108.5px;"></div><div class="nbs-flexisel-nav-right" style="top: 108.5px;"></div></div></div>
 </div>
-
 
 <!-- footer -->
 <div th:include="/common :: footer" id="copyright"></div>
