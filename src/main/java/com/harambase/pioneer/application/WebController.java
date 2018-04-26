@@ -52,4 +52,5 @@ public class WebController {
 
     @RequestMapping("/tupian")
     public String tupian() { return "tupian"; }
+
 }
