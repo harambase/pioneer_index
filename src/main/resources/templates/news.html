@@ -8,40 +8,72 @@
     a:hover{
         color: #6b9576;
     }
+    /*大标题*/
     .col-md-12 {
         font-size: xx-large;
         padding-bottom: 10px;
-        border-bottom: #657068 3px solid;
+        border-bottom: #657068 3px solid
     }
+    .col-md-10 h1{
+        font-size: xx-large;
+        color: #e6e6e6;
+    }
+    /*左侧导航*/
+    .col-sm-2{
+        background-color: rgba(37, 36, 36, 0.61);
+    }
+    .col-sm-2 h1{
+        font-size: x-large;
+        padding-bottom:5px;
+        border-bottom:3px solid rgba(118, 163, 118, 0.6);
+        color: rgba(255, 255, 255, 0.61);
+    }
+    .col-sm-2 a{
+        font-size: medium;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .col-sm-2 a:hover{
+        color: #6b9576;
+    }
+    /*中路正文*/
     .col-md-8{
         padding-right: 30px;
         padding-bottom:20px;
         margin-bottom: 20px;
         background-color: #ececec
     }
-    .col-md-10 h1{
-        font-size: xx-large;
-        color: #e6e6e6;
-    }
     .col-md-8 h2{
         border-bottom: #792329 3px solid;
         font-size:xx-large;
         color: #727272;
     }
+
+    /*右侧分栏*/
     .col-md-2 {
-        color: #cecece;
         padding: 10px;
         position: fixed;
-        top: 180px;
-        right: 230px;
-        font-size:large;
-        z-index:2;
-        background-color: #9eaca5;
+        top: 228px;
+        right: 150px;
+        font-size: large;
+        z-index: 2;
+        background-color: rgba(96, 110, 103, 0.6);
+        height: 185px;
+        overflow: auto;
     }
     .col-md-2 h1{
         font-size: xx-large;
-        border-bottom: solid #47668d 3px;
+        padding-bottom: 10px;
+        border-bottom: solid rgba(61, 87, 114, 0.6) 3px;
+        color: rgba(208, 207, 207, 0.6)
     }
+    .col-md-2 a{
+        color: rgba(255, 254, 254, 0.71)
+    }
+    .col-md-2 a:hover{
+        color: #6b9576;
+    }
+    /*正文的隐藏属性*/
+
     #hideMe1{
         display:none;
     }
@@ -65,9 +97,41 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1 id="heading">每周动态</h1>
+            <h1 id="heading">校园动态</h1>
+        </div>
+        <div class="col-sm-2">
+            <h1>导航</h1>
+            <p><a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+            <a href="#">ugiggiu</a><br>
+                <a href="#">ugiggiu</a></p>
         </div>
         <div class="col-md-8">
+        <div class="substances">
             <h2 id="2018-4-17">2018-4-17</h2>
             <ul>
                 <img src="../static/images/block.jpg" class="pictures">
@@ -75,17 +139,17 @@
                     Lorem Ipsum is simply dummy text of the printing an d typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
                 <a onclick="display1()" id="display1">展开</a>
                 <div id="hideMe1"><img src="../static/images/block.jpg" class="pictures">
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
                     Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
-                <img src="../static/images/block.jpg" id="pictures">
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
+                    <img src="../static/images/block.jpg" id="pictures">
+                     <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
                     Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
                     <a onclick="hide1()" >收起</a>
                 </div>
             </ul>
             <!--其实呢这边可以用微信公众号的链接来显示，即写一小段简介，然后在结束的时候用一个"了解详 情"导到微信公众号的网页链接-->
         </div>
-        <div class="col-md-8">
+        <div class="substances">
             <h2 id="2018-4-10">2018-4-10</h2>
             <ul>
                 <img src="../static/images/block.jpg" class="pictures">
@@ -104,7 +168,7 @@
             </ul>
         </div>
 
-        <div class="col-md-8">
+        <div class="substances">
             <h2 id="2018-4-3">2018-4-3</h2>
             <ul>
                 <img src="../static/images/block.jpg" class="pictures">
@@ -123,12 +187,17 @@
             </ul>
         </div>
         </div>
+    </div>
         <div class="col-md-2">
             <h1><a href="#heading">content</a></h1>
             <ul>
                 <li><a href="#2018-4-17">2018-4-17</a></li>
                 <li><a href="#2018-4-10">2018-4-10</a></li>
                 <li><a href="#2018-4-3">2018-4-3</a></li>
+                <li><a href="#">2018-4-#</a></li>
+                <li><a href="#">2018-4-#</a></li>
+                <li><a href="#">2018-4-#</a></li>
+                <li><a href="#">2018-4-#</a></li>
             </ul>
         </div>
     </div>
@@ -146,6 +215,7 @@
     $('.marquee').marquee({pauseOnHover: true});
 </script>
 <script>
+    <!-- 显示和隐藏-->
     function display1(){
         $("#hideMe1").css({display:"block"});
         $("#display1").css({display:"none"})

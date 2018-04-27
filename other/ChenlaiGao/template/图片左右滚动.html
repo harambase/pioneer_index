@@ -1,114 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easydropdown.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+
 </head>
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easydropdown.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(".scroll").click(function(event){
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-        });
-    });
-</script>
 <body>
 <div class="ourteam">
     <div class="container">
         <div class="team">
-            <ul id="flexiselDemo3">
-                <li>
+            <ul id="flexiselDemo3" class="nbs-flexisel-ul" style="left: -405px; display: block;">
+                <li class="nbs-flexisel-item" style="width: 405px;">
                     <div class="team1">
                         <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-                            <img src="images/team1.jpg" class="img-responsive" alt="" /></a>
-                        <div class="both">
-                            <div class="both-left">
-                                <h5>Sheak Reza</h5>
-                                <p>CEO, Both kicu</p>
-                            </div>
-                            <div class="both-right">
-                                <h6><a href="#">facebook</a> /<a href="#">twitter</a>
-                                    <a href="#">dribbble </a>/<a href="#"> linkedin</a></h6>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                            <img src="images/team1.jpg" class="img-responsive" alt=""></a>
                     </div>
-                </li>
-                <li>
+                </li><li class="nbs-flexisel-item" style="width: 405px;">
+                <li class="nbs-flexisel-item" style="width: 405px;">
                     <div class="team1">
                         <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-                            <img src="images/team2.jpg" class="img-responsive" alt="" /></a>
-                        <div class="both">
-                            <div class="both-left">
-                                <h5>Sheak Reza</h5>
-                                <p>CEO, Both kicu</p>
-                            </div>
-                            <div class="both-right">
-                                <h6><a href="#">facebook</a> /<a href="#">twitter</a>
-                                    <a href="#">dribbble </a>/<a href="#"> linkedin</a></h6>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                            <img src="images/team1.jpg" class="img-responsive" alt=""></a>
                     </div>
-                </li>
-                <li>
+                </li><li class="nbs-flexisel-item" style="width: 405px;">
+                <li class="nbs-flexisel-item" style="width: 405px;">
                     <div class="team1">
                         <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-                            <img src="images/team3.jpg" class="img-responsive" alt="" /></a>
-                        <div class="both">
-                            <div class="both-left">
-                                <h5>Sheak Reza</h5>
-                                <p>CEO, Both kicu</p>
-                            </div>
-                            <div class="both-right">
-                                <h6><a href="#">facebook</a> /<a href="#">twitter</a>
-                                    <a href="#">dribbble </a>/<a href="#"> linkedin</a></h6>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                            <img src="images/team1.jpg" class="img-responsive" alt=""></a>
                     </div>
-                </li>
-                <li>
-                    <div class="team1">
-                        <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-                            <img src="images/team2.jpg" class="img-responsive" alt="" /></a>
-                        <div class="both">
-                            <div class="both-left">
-                                <h5>Sheak Reza</h5>
-                                <p>CEO, Both kicu</p>
-                            </div>
-                            <div class="both-right">
-                                <h6><a href="#">facebook</a> /<a href="#">twitter</a>
-                                    <a href="#">dribbble </a>/<a href="#"> linkedin</a></h6>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="team1">
-                        <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-                            <img src="images/team1.jpg" class="img-responsive" alt="" /></a>
-                        <div class="both">
-                            <div class="both-left">
-                                <h5>Sheak Reza</h5>
-                                <p>CEO, Both kicu</p>
-                            </div>
-                            <div class="both-right">
-                                <h6><a href="#">facebook</a> /<a href="#">twitter</a>
-                                    <a href="#">dribbble </a>/<a href="#"> linkedin</a></h6>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
+                </li><li class="nbs-flexisel-item" style="width: 405px;">
+            </li></ul><div class="nbs-flexisel-nav-left" style="top: 108.5px;"></div><div class="nbs-flexisel-nav-right" style="top: 108.5px;"></div></div></div>
         </div>
-    </div>
-</div>
 </body>
-</html>
+        <script type="text/javascript">
+            $(window).load(function () {
+
+                $("#flexiselDemo3").flexisel({
+                    visibleItems: 3,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint: 480,
+                            visibleItems: 1
+                        },
+                        landscape: {
+                            changePoint: 640,
+                            visibleItems: 2
+                        },
+                        tablet: {
+                            changePoint: 768,
+                            visibleItems: 3
+                        }
+                    }
+                });
+
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
