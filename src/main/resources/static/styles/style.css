@@ -485,7 +485,8 @@ body a:hover{
     right: 0;
 }
 .banner-bottom{
-	padding:5em 0 0;
+    background: #eee;
+    padding:1em 0 .5em;
 }
 .br-bm-gd-lt,.br-bm-gd-lt1,.br-bm-gd-lt2,.br-bm-gd-lt3,.br-bm-gd-lt4,.br-bm-gd-lt5,.br-bm-gd-lt6,.br-bm-gd-lt7{
 	min-height:300px;

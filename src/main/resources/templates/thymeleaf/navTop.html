@@ -1,0 +1,53 @@
+<div th:fragment="navtop" xmlns:th="http://www.thymeleaf.org">
+    <div class="banner1">
+        <div class="banner-info1">
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo">
+                            <a class="navbar-brand" href="/index"><span><img style="width: 50px; height:50px;"
+                                                                             src="/static/images/logo.png"/></span>
+                                <strong>先锋教育</strong></a>
+                        </div>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav cl-effect-14" id="cl-effect-14">
+                            <li><a href="/about">关于我们</a></li>
+                            <li><a href="/news">最新动态</a></li>
+                            <li><a href="/lessons">招生与课程</a></li>
+                            <li class="act"><a href="/teacher" class="active">教学团队</a></li>
+                            <li><a href="/activity">学生活动</a></li>
+
+                            <li><a href="/graduate">毕业生去向</a></li>
+                            <li role="presentation" class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    先锋分支 <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/middle">中学部</a></li>
+                                    <li><a href="/elementray">小学部</a></li>
+                                    <li><a href="/agora">深圳分校</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/contact">联系我们</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="banner-bottom">
+    </div>
+</div>
