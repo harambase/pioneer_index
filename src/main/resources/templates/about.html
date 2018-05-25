@@ -4,14 +4,75 @@
 <head th:include="/thymeleaf/header :: header('先锋教育学校')"></head>
 
 <body>
+<style>
+    /*content*/
+    .col-md-3{
+        text-align: left;
+        background-color: grey;
+        padding:0;
+    }
+    h1{
+        font-size:x-large;
+        background-color: dimgray;
+        color:white;
+        padding:10px;
+    }
+    .content li{
+        padding:10px;
+        font-size: large;
+    }
+    .content li:hover{
+        background-color: #989797;
+    }
+    .content a:hover{
+        color:#FFFFFF;
+    }
+    /*正文*/
+    h2{
+        padding-bottom:3px;
+        font-size:xx-large;
+        border-bottom: 4px solid #172556;
+    }
+    .text{
+
+    }
+</style>
 <!-- banner -->
 <div th:include="/thymeleaf/navTop :: navtop" class="sidebar-collapse"></div>
 <!-- body -->
-<div class="row">
+<!-- banner -->
+<img src="http://k.zol-img.com.cn/dcbbs/22463/a22462389_s.jpg" width="1600px">
+<!-- //banner -->
+<div class="container">
     <div class="col-md-12">
+        <div class="col-md-3">
+            <h1>关于我们</h1>
+            <div class="content">
+                <ul>
+                    <li><a href="#">学校概况</a></li>
+                    <li><a href="#">建校历史</a></li>
+                    <li><a href="#">教育理念</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="col-md-12">
+                <h2>About us</h2>
+                <div class="text">
+                    <p>
+                    刘晓伟校长于1998年提出了“Good Character、Critical Thinking、Life-long Learning、Communication and Collaboration”（学会做人、学会思考、学会学习、学会交流、学会合作）的教育目标。在思考怎样达到这些目标时，刘校长发现许多知识都可以作为载体来达成这一教育目标，唯一的前提是学生对此感兴趣。<br>
+                    1998年刘校长在北京成立“北京先锋思维教育文化有限公司”，在一个幼儿园里以英语和信息技术为载体，开始实践这个教育理念。<br>
+                    2002年，刘校长在上海继续实践这样的教育理念，最初仍然是以少年儿童为主要的教育对象。在之后和高中家长的一次交谈中，意识到出国对于许多中国孩子而言或许是更好的选择。于是便在当年接受了三个这样的学生作为第一批学生，这三位学生于2005年离开先锋前往美国读大学。之后，先锋学校开始以初高中生为主要招生对象。<br>
+                    至此，先锋教育初具雏形。<br>
+                    2002年-2006年先锋教育主要采用在线教育的方式，2006年之后，刘校长回到成都，在家中开办私塾。<br>
+                    经过了几年的平稳发展后，2013年3月份，先锋教育学校有了实体的校园，进入了新的阶段。<br>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
+</div>
 <!-- body -->
 <!-- footer -->
 <div th:include="/thymeleaf/footer :: footer" id="copyright"></div>
