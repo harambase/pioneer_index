@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" class="pioneer_index" lang="zh">
+
+<head th:include="/thymeleaf/header :: header('先锋教育学校')"></head>
+
+<body>
+<style>
+    /*content*/
+    .col-md-3{
+        text-align: left;
+        background-color: grey;
+        padding:0;
+    }
+    .col-md-3 h1{
+        font-size:x-large;
+        background-color: dimgray;
+        color:white;
+        padding:10px;
+    }
+    .content li{
+        padding:10px;
+        font-size: large;
+    }
+    .content li:hover{
+        background-color: #989797;
+    }
+    .content a:hover{
+        color:#FFFFFF;
+    }
+    /*正文-reports*/
+    h2 {
+        padding-bottom: 3px;
+        font-size: xx-large;
+        border-bottom: 4px solid #172556;
+    }
+    p{
+        font-size: medium;
+    }
+    h1{
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+    h3{
+        margin-bottom: 5px;
+        font-size:large
+    }
+    /*返回顶部*/
+    .back a{
+        color:#0b0b0b;
+        background-color:white;
+        padding:5px;
+        border:1px rgba(122, 121, 121, 0.56) solid;
+        position:fixed;
+        bottom:100px;
+        right:60px;
+        font-size: medium;
+    }
+    .back a:hover{
+        background-color: #304340;
+        color:white;
+    }
+</style>
+<!-- banner -->
+<div th:include="/thymeleaf/navTop :: navtop" class="sidebar-collapse"></div>
+<!-- body -->
+<!-- banner -->
+<img id="banner" src="http://k.zol-img.com.cn/dcbbs/22463/a22462389_s.jpg" width="1600px">
+<!-- //banner -->
+<div class="container">
+    <div class="col-md-12">
+        <div class="col-md-3">
+            <h1>关于我们</h1>
+            <div class="content">
+                <ul>
+                    <li><a href="/about">建校历史</a></li>
+                    <li><a href="/about">学校概况</a></li>
+                    <li><a href="/about">教育理念</a></li>
+                    <li><a href="/about">校园文化</a></li>
+                </ul>
+            </div>
+            <h1>媒体报导</h1>
+            <div class="content">
+                <ul>
+                    <li><a href="/aboutReports1">教育自救中的“先锋”现象</a></li>
+                    <li><a href="/aboutReports2">先锋教育学校之前身“成都现代私塾”系列报道1</a></li>
+                    <li><a href="/aboutReports3">看“现代私塾”怎么上课</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="col-md-12">
+                <div id="aboutReports2"></div>
+                <h2>About Us</h2>
+                <h1>看“现代私塾”怎么上课</h1>
+                <h3>（转自2012年12月09日华西都市报）</h3>
+                <img src="http://641.s21i.faidns.com/951641/2/ABUIABACGAAguriZhwUorJaF0QYwlAM4jgI.jpg">
+                <p>
+                <h3>《成都有个﹃现代私塾﹄》后续</h3><br>
+                    　　硕士生刘晓伟在成都办了一个“现代私塾”：没有教室，咖啡厅、书吧、周遭的博物馆都是孩子的课堂；没有统一的课程，每个娃娃对什么感兴趣，老师就教什么；没有考试“皆大欢喜”，学生调研项目，每月都交论文；没有固定的老师，刘晓伟请来好友、教授、留学生与大家交流。<br>
+                    　　如此看似“没有章法“的教学模式，最终拿不到学历的教学过程，在刘晓伟老师眼中倒是一种“原生态”的本真教育，它受到部分家长的欢迎。昨日，几十位家长打进华西都市报热线，希望了解现代私塾。华西都市报记者带着他们的问题，采访到几位在读学生与家长，听他们讲解孩子在私塾的学习经历。<br>
+                    放养<br>
+
+                    <h3>小孩能管好自己？按目标排课程学生更自立</h3>
+                    　　没有了早晨学校的闹铃、没有了老师在讲台上授课，只是每周有几次会面，在这个“放养式”的教育环境里，这些12—18岁的孩子，能自觉地学习吗？<br>
+                    　　“不会的，他比以前起得更早。”一位妈妈给记者说起儿子的变化，“以前是我把早饭给他做好，他吃了再上学。现在他早晨起床给我们煮好饭，读上一段《论语》或者《满江红》等，然后坐一个多小时的车到城中心学武术。下午，回到家做项目调查或者网上作业，晚上捣鼓他喜欢的音乐、耍耍电脑等，睡觉也要10点过。“没有排名与考核，他感觉很自在。”另一位妈妈说，起初她辞职在家陪读，但后来看女儿慢慢适应了，她也就重新回到了岗位。<br>
+                    　　没有考核与排名，学生靠什么来维持这样的学习激情？<br>
+                    　　15岁的吴小增（化名）理直气壮地说：“因为我确立了自己的近期目标是好好学习，中期目标是学习好英语，远期目标是获得微软软件工程师的认证。我有学习计划，并不是胡乱没有章法地学。”<br>
+                    培养<br>
+
+                    <h3>来读的都是差生？多数是中等生不适应传统学校</h3><br>
+                    　　要说刘晓伟的私塾，在成都市也办了好些年，生源都是朋友托朋友，把娃娃送到这里。<br>
+                    　　记者调查了解到，在这里读书的多是中等成绩的娃娃，他们有的思想太过活跃，被老师称作调皮，也有被繁重的课业压得对成绩以外的东西不再感兴趣的孩子，还有从名校退学的孩子。用家长们的话来说：“就是那些对传统环境不太适应，又想从中寻求改变的人。”<br>
+                    　　半年前，刘灵（化名）在西门一所知名初中读初二，成绩只能排到班级20多名。最让她难过的的，作业常常做到晚上10点过，还不得不放弃学了6年的小提琴。“压力太大，她变得不爱说笑了，总是沮丧着脸。“妈妈罗女士心急如焚，半年前，把女儿送到刘老师的私塾。刘灵又开始练习心爱的小提琴，更重要的是，没有了成绩排名让她渐渐自信起来。
+                    　　妈妈说，一位老师邀请刘灵当众演奏一曲巴赫的曲子，从来没有练习过巴赫的她却答应了要求，自信的她为此认真练习了一周。按照以往，害羞甚至自卑的她会把这个机会拒绝掉。<br>
+                    <br>
+
+                <h3>学费不便宜？家长认同理念信任更重要</h3>
+                    　　刘晓伟将学生家庭定位为“家庭条件大多比较好“。在这些父母中，有的是中学的老师，有的是大学教授，也有做生意的，不过他们都认为学费并不是最重要的，关键是认同教育理念。<br>
+                    　　私塾学生还有部分隐形的开销。比如学生侯韦谦的调研题目是关于温州农民商业化的问题，父亲带着他到温州去住了两个星期。他不仅能力得到提高，后来还被美国名校录取。<br>
+                    　　“最重要的，是我们认同与信任。我们要首先对刘老师的教法信任，刘老师有对孩子真正的爱与适合他们的教法，我们才选择到这里。“在一场音乐合唱比赛上，家长们与孩子、老师一起歌唱，孩子们疯、笑，很快乐。”<br>
+                    　　有时候，也有家长会觉得自己是背离了正规的教学途径，但有时他们也会对自己说：“我们并没有错，说不定还有点‘潮’，选择了先一步用信息化教学。“<br>
+                <h3>刘晓伟：关键看个性一年带20个学生</h3><br>
+                    　　昨日，本报报道“现代私塾“的教学模式为网络教学、项目授课与音乐、体育活动为主。有家长打进热线询问如此上课是否太过”简易“。<br>
+                    　　“随着我们的信息网越来越发达，可以降低求学成本。在网络上任何人都可以成为你的老师，只要你拥有了知道如何去找答案的能力，整个世界也可以是你的学校。“刘晓伟说。<br>
+                    　　“我的孩子在学校学得吃力，可以来刘老师这里不？“”我从国外留学回来，也对教育感兴趣，是否可以与刘老师交流？“昨日，不少家长和老师对刘晓伟的教学方法很关注。刘老师告诉记者，因为自己精力有限，过去每年最多带二十个学生，希望私塾保证教育质量。对于孩子是否能到这里读书，还要看每个孩子的个性是否适合。<br>
+                    　　而他也准备开通微博与对私塾感兴趣的家长进行互动。有学生说，或许，崇尚信息化教学的他认为现代网络是一种沟通的好方式。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="back">
+    <a href="#banner">返回<br>
+        顶部</a>
+</div>
+
+<!-- footer -->
+<div th:include="/thymeleaf/footer :: footer" id="copyright"></div>
+<!-- //footer -->
+
+<div th:include="/thymeleaf/js :: load_js"></div>
+<script>
+    $('.marquee').marquee({pauseOnHover: true});
+</script>
+</body>
+</html>

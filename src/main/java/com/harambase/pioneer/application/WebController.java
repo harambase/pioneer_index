@@ -55,4 +55,10 @@ public class WebController {
 
     @RequestMapping("/aboutReports1")
     public String aboutReports1() { return "aboutReports1"; }
+
+    @RequestMapping("/aboutReports2")
+    public String aboutReports2() { return "aboutReports2"; }
+
+    @RequestMapping("/aboutReports3")
+    public String aboutReports3() { return "aboutReports3"; }
 }
