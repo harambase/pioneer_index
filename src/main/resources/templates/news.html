@@ -2,209 +2,95 @@
 <html xmlns:th="http://www.thymeleaf.org" class="pioneer_index" lang="zh">
 <head th:include="/thymeleaf/header :: header('先锋教育学校')">
 </head>
-
 <body>
 <style>
-    a:hover{
-        color: #6b9576;
+    /*left*/
+    .col-md-3{
+        text-align: left;
+        background-color: #606060;
+        padding:0;
     }
-    /*大标题*/
-    .col-md-12 {
-        font-size: xx-large;
-        padding-bottom: 10px;
-        border-bottom: #657068 3px solid
+    h1{
+        margin-top:-46px;
+        font-size:x-large;
+        background-color: #3f3f3f;
+        padding:10px;
+        color:white;
     }
-    .col-md-10 h1{
-        font-size: xx-large;
-        color: #e6e6e6;
-    }
-    /*左侧导航*/
-    .col-sm-2{
-        background-color: rgba(36, 53, 73, 0.6);
-    }
-    .col-sm-2 h1{
-        font-size: x-large;
-        padding-bottom:5px;
-        border-bottom:3px solid #9fa8a3;
-        color: rgba(255, 255, 255, 0.61);
-    }
-    .col-sm-2 a{
-        font-size: medium;
-        color: rgba(255, 255, 255, 0.6);
-    }
-    .col-sm-2 a:hover{
-        color: #6b9576;
-    }
-    /*中路正文*/
-    .col-md-8{
-        padding-right: 30px;
-        padding-bottom:20px;
-        margin-bottom: 20px;
-        background-color: #ececec
-    }
-    .col-md-8 h2{
-        border-bottom: #792329 3px solid;
-        font-size:xx-large;
-        color: #727272;
-    }
-
-    /*右侧分栏*/
-    .col-md-2 {
-        padding: 10px;
-        position: fixed;
-        top: 179px;
-        right: 150px;
+    .col-md-3 li{
+        padding:10px;
         font-size: large;
-        z-index: 2;
-        background-color: rgba(96, 110, 103, 0.6);
-        height: 185px;
-        overflow: auto;
     }
-    .col-md-2 h1{
-        font-size: xx-large;
-        padding-bottom: 10px;
-        border-bottom: solid rgba(61, 87, 114, 0.6) 3px;
-        color: rgba(208, 207, 207, 0.6)
+    .col-md-3 li:hover{
+        background-color: #989797;
     }
-    .col-md-2 a{
-        color: rgba(255, 254, 254, 0.71)
+    .col-md-3 a:hover{
+        color:#FFFFFF;
     }
-    .col-md-2 a:hover{
-        color: #6b9576;
+    /*right*/
+    h2{
+        border-bottom:solid 2px;
+        padding-bottom:5px;
     }
-    /*正文的隐藏属性*/
-
-    #hideMe1{
-        display:none;
-    }
-    #hideMe2{
-        display:none;
-    }
-    #hideMe3{
-        display:none;
-    }
-    .pictures{
-        height:400px;
-        width:600px;
-        margin:5px;
+    h3{
+        font-size:medium;
         padding:5px;
-        border:dotted 3px black
+    }
+    .col-md-9 a{
+        color: #000000;
+        font-size:x-large;
+        padding: 0;
+        margin-bottom:5px
+    }
+    .col-md-9 p{
+        text-align:right;
+        padding-right:5px;
+        font-size:small;
+    }
+    a:hover{
+        color: #122845;
+    }
+    #main{
+        font-weight:bold;
+    }
+    .content{
+        overflow:auto;
+        height:350px;
     }
 </style>
 <!-- banner -->
 <div th:include="/thymeleaf/navTop :: navtop" class="sidebar-collapse"></div>
 <!--body -->
+<img id="banner" src="http://k.zol-img.com.cn/dcbbs/22463/a22462389_s.jpg" width="1600px">
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 id="heading">校园动态</h1>
-        </div>
-        <div class="col-sm-2">
-            <h1>导航</h1>
-            <p><a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-            <a href="#">ugiggiu</a><br>
-                <a href="#">ugiggiu</a></p>
-        </div>
-        <div class="col-md-8">
-        <div class="substances">
-            <h2 id="2018-4-17">2018-4-17</h2>
+    <div class="col-md-12">
+        <div class="col-md-3">
+            <h1>当月热点</h1>
             <ul>
-                <img src="../static/images/block.jpg" class="pictures">
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
-                    Lorem Ipsum is simply dummy text of the printing an d typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
-                <a onclick="display1()" id="display1">展开</a>
-                <div id="hideMe1"><img src="../static/images/block.jpg" class="pictures">
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
-                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
-                    <img src="../static/images/block.jpg" class="pictures">
-                     <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
-                    Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
-                    <a onclick="hide1()" >收起</a>
-                </div>
-            </ul>
-            <!--其实呢这边可以用微信公众号的链接来显示，即写一小段简介，然后在结束的时候用一个"了解详 情"导到微信公众号的网页链接-->
-        </div>
-        <div class="substances">
-            <h2 id="2018-4-10">2018-4-10</h2>
-            <ul>
-                <img src="../static/images/block.jpg" class="pictures">
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
-                    Lorem Ipsum is simply dummy text of the printing an d typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
-                <a onclick="display2()" id="display2">展开</a>
-                <div id="hideMe2">
-                <img src="../static/images/block.jpg" class="pictures">
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
-                        Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
-                <img src="../static/images/block.jpg" class="pictures">
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
-                        Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
-                    <a onclick="hide2()">收起</a>
-                </div>
+                <li><a href="/newsnow1">#</a></li>
+                <li><a href="/newsnow1">#</a></li>
+                <li><a href="/newsnow1">#</a></li>
+                <li><a href="/newsnow1">#</a></li>
+                <li><a href="/newsnow1">#</a></li>
+                <li><a href="/newsnow1">#</a></li>
+                <li><a href="/newsnow1">#</a></li>
+                <li><a href="/newsnow1">#</a></li>
             </ul>
         </div>
-
-        <div class="substances">
-            <h2 id="2018-4-3">2018-4-3</h2>
-            <ul>
-                <img src="../static/images/block.jpg" class="pictures">
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
-                    Lorem Ipsum is simply dummy text of the printing an d typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
-                <a onclick="display3()" id="display3">展开</a>
-                <div id="hideMe3">
-                <img src="../static/images/block.jpg" class="pictures">
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
-                        Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
-                <img src="../static/images/block.jpg" class="pictures">
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.What are the most important things to be considered in design
-                        Lorem Ipsum is simply dummy text of the printing and typetook a galley of type and scrambled it to make a type specimen book. It has survived not only five Continue Reading <a href="#">Learn more</a></li>
-                    <a onclick="hide3()">收起</a>
+        <div class="col-md-9">
+            <h2><a href="/news" id="main">学校通知 </a>  <a href="/"> 近期活动</a></h2>
+                <div class="content">
+                    <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                    <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                    <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                    <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                    <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                    <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                    <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                    <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
                 </div>
-            </ul>
-        </div>
         </div>
     </div>
-        <div class="col-md-2">
-            <h1><a href="#heading">content</a></h1>
-            <ul>
-                <li><a href="#2018-4-17">2018-4-17</a></li>
-                <li><a href="#2018-4-10">2018-4-10</a></li>
-                <li><a href="#2018-4-3">2018-4-3</a></li>
-                <li><a href="#">2018-4-#</a></li>
-                <li><a href="#">2018-4-#</a></li>
-                <li><a href="#">2018-4-#</a></li>
-                <li><a href="#">2018-4-#</a></li>
-            </ul>
-        </div>
-    </div>
-
-    </div>
-
-
 </div>
 <!-- footer -->
 <div th:include="/thymeleaf/footer :: footer" id="copyright"></div>
@@ -213,33 +99,6 @@
 <div th:include="/thymeleaf/js :: load_js"></div>
 <script>
     $('.marquee').marquee({pauseOnHover: true});
-</script>
-<script>
-    <!-- 显示和隐藏-->
-    function display1(){
-        $("#hideMe1").css({display:"block"});
-        $("#display1").css({display:"none"})
-    }
-    function hide1(){
-        $("#hideMe1").css({display:"none"});
-        $("#display1").css({display:"block"})
-    }
-    function display2(){
-        $("#hideMe2").css({display:"block"});
-        $("#display2").css({display:"none"})
-    }
-    function hide2(){
-        $("#hideMe2").css({display:"none"});
-        $("#display2").css({display:"block"})
-    }
-    function hide3(){
-        $("#hideMe3").css({display:"none"});
-        $("#display3").css({display:"block"})
-    }
-    function display3(){
-        $("#hideMe3").css({display:"block"});
-        $("#display3").css({display:"none"})
-    }
 </script>
 </body>
 </html>

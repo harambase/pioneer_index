@@ -61,4 +61,13 @@ public class WebController {
 
     @RequestMapping("/aboutReports3")
     public String aboutReports3() { return "aboutReports3"; }
+
+    @RequestMapping("/activity")
+    public String activity() { return "activity"; }
+
+    @RequestMapping("/news2")
+    public String news2() { return "news2"; }
+
+    @RequestMapping("/news0")
+    public String news0() { return "news0"; }
 }
