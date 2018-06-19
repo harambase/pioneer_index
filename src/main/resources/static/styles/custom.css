@@ -468,8 +468,8 @@ a:hover {
 .s-home-layout {
     width: 100%;
     min-width: 1180px;
+    min-height: 400px;
     margin: 0 auto;
-    background-color: #f5f5f5
 }
 
 .s-home-layout .layout-inner {
@@ -514,10 +514,6 @@ a:hover {
     display: block;
     font-size: 16px;
     color: #666
-}
-
-.s-home-item1 {
-    padding-bottom: 115px
 }
 
 .s-home-item1 .item-list li {

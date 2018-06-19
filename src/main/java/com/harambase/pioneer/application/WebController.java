@@ -23,7 +23,7 @@ public class WebController {
         return "test";
     }
 
-    @RequestMapping("/index")
+    @RequestMapping({"/index","/"})
     public String welcome() {
         return "index";
     }

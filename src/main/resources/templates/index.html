@@ -8,13 +8,12 @@
 <div th:include="/thymeleaf/navTop :: navtop" class="sidebar-collapse"></div>
 
 <!--item-1-->
-<div class="s-home-layout s-home-item1">
-    <div class="layout-inner">
-        <h2 class="s-item-title">
-            <span class="main-title"> <a href="/index"></a>照片展示模块</span>
-            <span class="sub-title">幻灯片的形式，可以左右点击，更换照片</span>
-        </h2>
-    </div>
+<div class="s-home-layout s-home-item1" id="app">
+    <el-carousel height="400px">
+        <el-carousel-item v-for="item in img" :key="item">
+            <img :src="item"/>
+        </el-carousel-item>
+    </el-carousel>
 </div>
 
 <!--item-2-->
@@ -262,5 +261,18 @@
 <script>
     $('.marquee').marquee({pauseOnHover: true});
 </script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                visible: false,
+                img: ['/static/images/banner.jpg', '/static/images/background.jpg'],
+            }
+        }
+    })
+</script>
+
 </body>
 </html>
