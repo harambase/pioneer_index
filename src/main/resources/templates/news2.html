@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" class="pioneer_index" lang="zh">
-
-<head th:include="/thymeleaf/header :: header('先锋教育学校')"></head>
-
+<head th:include="/thymeleaf/header :: header('先锋教育学校')">
+</head>
 <body>
+<style>
+    /*left*/
+    .col-md-3{
+        text-align: left;
+        background-color: #606060;
+        padding:0;
+    }
+    h1{
+        margin-top:-46px;
+        font-size:x-large;
+        background-color: #3f3f3f;
+        padding:10px;
+        color:white;
+    }
+    .col-md-3 li{
+        padding:10px;
+        font-size: large;
+    }
+    .col-md-3 li:hover{
+        background-color: #989797;
+    }
+    .col-md-3 a:hover{
+        color:#FFFFFF;
+    }
+    /*right*/
+    h2{
+        border-bottom:solid 2px;
+        padding-bottom:5px;
+    }
+    h3{
+        font-size:medium;
+        padding:5px;
+    }
+    .col-md-9 a{
+        color: #000000;
+        font-size:x-large;
+        padding: 0;
+        margin-bottom:5px
+    }
+    .col-md-9 p{
+        text-align:right;
+        padding-right:5px;
+        font-size:small;
+    }
+    a:hover{
+        color: #122845;
+    }
+    #main{
+        font-weight:bold;
+    }
+    .content{
+        overflow:auto;
+        height:350px;
+    }
+</style>
 <!-- banner -->
 <div th:include="/thymeleaf/navTop :: navtop" class="sidebar-collapse"></div>
-
+<!--body -->
+<img id="banner" src="http://k.zol-img.com.cn/dcbbs/22463/a22462389_s.jpg" width="1600px">
+<div class="container">
+    <div class="col-md-12">
+        <div class="col-md-3">
+            <h1>当月热点</h1>
+            <ul>
+                <li><a href="/news0">#</a></li>
+                <li><a href="/news0">#</a></li>
+                <li><a href="/news0">#</a></li>
+                <li><a href="/news0">#</a></li>
+                <li><a href="/news0">#</a></li>
+                <li><a href="/news0">#</a></li>
+                <li><a href="/news0">#</a></li>
+                <li><a href="/news0">#</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <h2><a href="/news" >学校通知 </a>  <a href="/news2" id="main"> 近期活动</a></h2>
+            <div class="content">
+                <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+                <h3><a href="/news0">……</a></h3><p class="date">2018-x-x</p>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- footer -->
 <div th:include="/thymeleaf/footer :: footer" id="copyright"></div>
 <!-- //footer -->

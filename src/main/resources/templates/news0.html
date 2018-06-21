@@ -4,9 +4,58 @@
 <head th:include="/thymeleaf/header :: header('先锋教育学校')"></head>
 
 <body>
+<style>
+    h1{
+        font-size: xx-large;
+        background-color: rgba(34, 34, 34, 0.99);
+        color:white;
+        font-weight:bold;
+        padding:5px;
+    }
+    .col-md-12 p{
+        font-size: medium;
+        padding:5px;
+        background-color: #cfcfcf;
+        border-left:dotted #000000 3px;
+        border-right:dotted #000000 3px;
+    }
+    .back a{
+        color:#0b0b0b;
+        background-color:white;
+        padding:5px;
+        border:1px rgba(122, 121, 121, 0.56) solid;
+        position:fixed;
+        bottom:100px;
+        right:60px;
+        font-size: medium;
+    }
+    .back a:hover{
+        background-color: #304340;
+        color:white;
+    }
+</style>
 <!-- banner -->
 <div th:include="/thymeleaf/navTop :: navtop" class="sidebar-collapse"></div>
+<!--container-->
+<div class="container">
+    <div class="col-md-12">
+        <h1>Title</h1>
+    </div>
+</div>
+<img id="banner" src="http://k.zol-img.com.cn/dcbbs/22463/a22462389_s.jpg" width="1600px">
+<div class="container">
+        <div class="col-md-12">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+</div>
+<div class="back">
+    <a href="/news">返回<br>
+        页面</a>
+</div>
 
+<!--container-->
 <!-- footer -->
 <div th:include="/thymeleaf/footer :: footer" id="copyright"></div>
 <!-- //footer -->
