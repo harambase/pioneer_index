@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" class="pioneer_index" lang="zh">
-
 <head th:include="/thymeleaf/header :: header('先锋教育学校')"></head>
-
 <body>
+<style>
+    h1{
+        font-size: xx-large;
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom:5px;
+        border-bottom: #002A4C 3px solid;
+    }
+    h2{
+        font-size:x-large;
+        margin: 5px;
+        padding-bottom:5px;
+        color:#00b0a6;
+    }
+    h3{
+        font-size:larger;
+        font-weight: lighter;
+        padding-left: 10px;
+    }
+    p{
+        font-size:medium;
+        padding:10px;
+    }
+</style>
 <!-- banner -->
 <div th:include="/thymeleaf/navTop :: navtop" class="sidebar-collapse"></div>
-
+<div class="container">
+    <div class="col-md-12">
+        <h1>当月活动</h1>
+            <div class="s-home-layout s-home-item1" id="app">
+                <el-carousel height="400px">
+                    <el-carousel-item v-for="item in img" :key="item">
+                        <img :src="item"/>
+                    </el-carousel-item>
+                </el-carousel>
+            </div>
+        <div class="col-md-4">
+            <h2>活动1</h2>
+            <h3>简介</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>活动2</h2>
+            <h3>简介</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>活动3</h2>
+            <h3>简介</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.</p>
+        </div>
+    </div>
+</div>
+</body>
 <!-- footer -->
 <div th:include="/thymeleaf/footer :: footer" id="copyright"></div>
 <!-- //footer -->
@@ -14,6 +66,17 @@
 <div th:include="/thymeleaf/js :: load_js"></div>
 <script>
     $('.marquee').marquee({pauseOnHover: true});
+</script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                visible: false,
+                img: ['/static/images/banner.jpg', '/static/images/background.jpg'],
+            }
+        }
+    })
 </script>
 </body>
 </html>
